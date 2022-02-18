@@ -20,7 +20,7 @@ snake[0] = {
 let direction = "right";
 
 // Vida
-let lives = 5;
+let lives = 3;
 
 function scoreLive(lives)
 {
@@ -77,6 +77,24 @@ function update (event)
 
 function iniciarJogo()
 {
+    //Colisão da cabeça com o corpo
+    for (let corpo = 1; corpo < snake.length; corpo++)
+    {
+        if (snake[0].x == snake[corpo].x && snake[0].y == snake[corpo].y)
+        {
+            if (lives > 0)
+            {
+                lives--;
+            }
+            else{
+                clearInterval(jogo);
+                alert('GAME OVER :(');
+                // carrega a pagina altomaticamente
+                document.location.reload(true);
+            }
+            
+        }    
+    }
     //Colisão na lateral direita trenferencia para lateral equerda
     if(snake[0].x > 19 * box && direction == "right") snake[0].x = 0;
 

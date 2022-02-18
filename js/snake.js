@@ -96,16 +96,16 @@ function iniciarJogo()
         }    
     }
     //Colisão na lateral direita trenferencia para lateral equerda
-    if(snake[0].x > 19 * box && direction == "right") snake[0].x = 0;
+    if(snake[0].x > 16 * box && direction == "right") snake[0].x = 0;
 
     //Colisão na lateral esquerda trenferencia para lateral direita
-    if(snake[0].x < 0 && direction == "left" ) snake[0].x = 19 * box;
+    if(snake[0].x < 0 && direction == "left" ) snake[0].x = 16 * box;
 
     //Colisão na parte superior trenferencia para parte inferior
-    if(snake[0].y > 19 * box && direction == "down") snake[0].y = 0;
+    if(snake[0].y > 16 * box && direction == "down") snake[0].y = 0;
 
     //Colisão na parte inferiortrenferencia para parte superior
-    if(snake[0].y < 0 && direction == "up"  ) snake[0].y = 19 * box;
+    if(snake[0].y < 0 && direction == "up"  ) snake[0].y = 16 * box;
 
     if(point == 20)
     {

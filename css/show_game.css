@@ -32,10 +32,14 @@ body{
 .container img{
     width: 150px;
     margin: auto;
+    margin-bottom: 15px;
+
 }
 
 .container p{
     text-align: justify;
+    font-size: 20px;
+    padding: 5px;
 }
 
 .btn{

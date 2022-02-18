@@ -1,0 +1,61 @@
+body{
+    background-color: #fafafa;
+}
+.score{
+    position: absolute;
+    margin-bottom: 200px;
+    padding: 5px;
+    font-size: 30px;
+}
+.score img{
+    width: 30px;
+}
+#backgroud{
+    background-image: url(../img/background.png);
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%px;
+    max-height: 200px;
+    min-height: 200px;
+    border: solid 1px black;
+}
+#dino{
+    background-image: url(../img/dino_google.png);
+    width: 60px;
+    height: 60px;
+    position: relative;
+    bottom: 0;
+    margin-left: 50px;
+}
+
+.cactus{
+    background-image: url(../img/cactus.png);
+    width: 60px;
+    height: 60px;
+    margin-bottom: -60px;
+    position: relative;
+    bottom: 0;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 7000%;
+    }
+    to {
+        background-position: 0;
+    }
+}
+
+#backgroud{
+    background-image: url(../img/background.png);
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%px;
+    max-height: 200px;
+    min-height: 200px;
+    border: solid 1px black;
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+}

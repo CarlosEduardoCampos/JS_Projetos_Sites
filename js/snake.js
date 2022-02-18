@@ -26,6 +26,13 @@ function scoreLive(lives)
     numLives.innerText = lives;
 }
 
+// Comida
+let food = {
+    // cria posição aleatoria no eixo x e y 
+    x: Math.floor(Math.random() * 15) * box,
+    y: Math.floor(Math.random() * 14) * box
+}
+
 function criarBG()
 {
     context.fillStyle = "lightgreen"; // cor de fundo
@@ -42,6 +49,12 @@ function criarCobrinha()
     }
 }
 
+function drawFood()
+{
+    context.fillStyle = "red";
+    context.fillRect(food.x, food.y, box, box);
+}
+
 // Evento espera um click no teclado
 document.addEventListener('keydown', update);
 
@@ -53,6 +66,7 @@ function update (event)
     if (event.keyCode == 39 && direction != "left")  direction = "right";
     if (event.keyCode == 40 && direction != "up")    direction = "down";
 }
+
 
 function iniciarJogo()
 {
@@ -71,6 +85,7 @@ function iniciarJogo()
     criarBG();
     criarCobrinha();
     scoreLive(lives);
+    drawFood();
 
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;

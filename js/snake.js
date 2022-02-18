@@ -1,19 +1,30 @@
 // Tela do jogo
 let canvas = document.getElementById("snake");
 let context = canvas.getContext("2d");
+let divScore = document.getElementById("score");
+let numLives = document.getElementById("numlives")
 let box = 37.5;
+
 
 // Cobrinha
 let snake = [];
 
+//Posição inicial
 snake[0] = {
-    x:8 * box,
-    y:8 * box
+    x:7.5 * box,
+    y:7.5 * box
 }
 
 // movimentação
 let direction = "right";
 
+// Vida
+let lives = 5;
+
+function scoreLive(lives)
+{
+    numLives.innerText = lives;
+}
 
 function criarBG()
 {
@@ -31,10 +42,35 @@ function criarCobrinha()
     }
 }
 
+// Evento espera um click no teclado
+document.addEventListener('keydown', update);
+
+function update (event)
+{
+    // 37 direita(right) 38 baixo(down) 39 esquerda(left) 40 alto(up)
+    if (event.keyCode == 37 && direction != "right") direction = "left";
+    if (event.keyCode == 38 && direction != "down")  direction = "up";
+    if (event.keyCode == 39 && direction != "left")  direction = "right";
+    if (event.keyCode == 40 && direction != "up")    direction = "down";
+}
+
 function iniciarJogo()
 {
+    //Colisão na lateral direita trenferencia para lateral equerda
+    if(snake[0].x > 17 * box && direction == "right") snake[0].x = 0;
+
+    //Colisão na lateral esquerda trenferencia para lateral direita
+    if(snake[0].x < 0 && direction == "left" ) snake[0].x = 17 * box;
+
+    //Colisão na parte superior trenferencia para parte inferior
+    if(snake[0].y > 17 * box && direction == "down") snake[0].y = 0;
+
+    //Colisão na parte inferiortrenferencia para parte superior
+    if(snake[0].y < 0 && direction == "up"  ) snake[0].y = 17 * box;
+
     criarBG();
     criarCobrinha();
+    scoreLive(lives);
 
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
@@ -62,4 +98,4 @@ function iniciarJogo()
 }
 
 // Recarrega função a cada 100ms (frame)
-let jogo = setInteval(iniciarJogo, 100);
+let jogo = setInterval(iniciarJogo, 200);

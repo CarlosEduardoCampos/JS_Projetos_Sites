@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+}
+
+#score{
+    padding: 5px;
+    color: rgb(255, 0, 0);
+    margin-bottom: -50px;
+    margin-left: -40%;
+    position: relative;
+}
+
+#score img{
+    width: 40px;
+}
+
+#score label{
+    font-size: 30px;
+}
+
+canvas{
+    border-radius: 20px;
+    border: 1px solid black;
+}

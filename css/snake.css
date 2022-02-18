@@ -6,12 +6,16 @@ body{
     padding: 5px;
     color: rgb(255, 0, 0);
     margin-bottom: -50px;
-    margin-left: -40%;
+    margin-left: -35%;
     position: relative;
 }
 
 #score img{
     width: 40px;
+}
+
+#score .food{
+    margin-bottom: -5px ;
 }
 
 #score label{

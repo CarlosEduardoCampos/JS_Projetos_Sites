@@ -3,7 +3,8 @@ let canvas = document.getElementById("snake");
 let context = canvas.getContext("2d");
 let divScore = document.getElementById("score");
 let numLives = document.getElementById("numlives")
-let box = 37.5;
+let numFood = document.getElementById("numfood")
+let box = 32;
 
 
 // Cobrinha
@@ -11,8 +12,8 @@ let snake = [];
 
 //Posição inicial
 snake[0] = {
-    x:7.5 * box,
-    y:7.5 * box
+    x:8 * box,
+    y:8 * box
 }
 
 // movimentação
@@ -27,16 +28,22 @@ function scoreLive(lives)
 }
 
 // Comida
+let point = 0;
 let food = {
     // cria posição aleatoria no eixo x e y 
     x: Math.floor(Math.random() * 15) * box,
-    y: Math.floor(Math.random() * 14) * box
+    y: Math.floor(Math.random() * 15) * box
+}
+
+function scoreFood(food)
+{
+    numFood.innerText = food;
 }
 
 function criarBG()
 {
     context.fillStyle = "lightgreen"; // cor de fundo
-    context.fillRect(0, 0, 18.75 * box, 18.75 * box);// cria tela do game
+    context.fillRect(0, 0, 20 * box, 20 * box);// cria tela do game
 }
 
 function criarCobrinha()
@@ -71,20 +78,27 @@ function update (event)
 function iniciarJogo()
 {
     //Colisão na lateral direita trenferencia para lateral equerda
-    if(snake[0].x > 17 * box && direction == "right") snake[0].x = 0;
+    if(snake[0].x > 19 * box && direction == "right") snake[0].x = 0;
 
     //Colisão na lateral esquerda trenferencia para lateral direita
-    if(snake[0].x < 0 && direction == "left" ) snake[0].x = 17 * box;
+    if(snake[0].x < 0 && direction == "left" ) snake[0].x = 19 * box;
 
     //Colisão na parte superior trenferencia para parte inferior
-    if(snake[0].y > 17 * box && direction == "down") snake[0].y = 0;
+    if(snake[0].y > 19 * box && direction == "down") snake[0].y = 0;
 
     //Colisão na parte inferiortrenferencia para parte superior
-    if(snake[0].y < 0 && direction == "up"  ) snake[0].y = 17 * box;
+    if(snake[0].y < 0 && direction == "up"  ) snake[0].y = 19 * box;
+
+    if(point == 20)
+    {
+        point = 0;
+        lives++;
+    }
 
     criarBG();
     criarCobrinha();
     scoreLive(lives);
+    scoreFood(point);
     drawFood();
 
     let snakeX = snake[0].x;
@@ -94,15 +108,23 @@ function iniciarJogo()
     if(direction == "right") snakeX += box;
 
     // movimento para esquerda
-    if(direction == "left") snakeX -= box;
+    else if(direction == "left") snakeX -= box;
 
     // movimento para cima
-    if(direction == "up") snakeY -= box;
+    else if(direction == "up") snakeY -= box;
 
     // movimeto para baixo
-    if(direction == "down") snakeY += box;
+    else if(direction == "down") snakeY += box;
 
-    snake.pop();
+    if (snakeX != food.x || snakeY != food.y)
+    {
+        snake.pop();    
+    }
+    else{
+        food.x = Math.floor(Math.random() * 15) * box;
+        food.y = Math.floor(Math.random() * 15) * box;
+        point++;
+    }
 
     // cria uma nova cabeça
     let newHead ={

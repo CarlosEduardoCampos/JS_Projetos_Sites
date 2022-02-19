@@ -17,6 +17,8 @@ function handleKeyUp(event)
     }
 }
 
+document.addEventListener('keyup', handleKeyUp)
+
 // Animação de pulo
 function jump()
 {
@@ -55,12 +57,15 @@ function jump()
 
 function createCactus()
 {
+    //Cria elemeto cactus dentro do backgroud
     const cactus = document.createElement('div');
+
     let cactusPosition = 1500;
     let randomTime = Math.floor(Math.random() * 5000);
     
     cactus.classList.add('cactus');
     cactus.style.left = 1500 + 'px';
+
     Backgroud.appendChild(cactus);
 
     // Movimento do cactus
@@ -91,5 +96,6 @@ function createCactus()
 let somatime = setInterval(() => {
     Score.innerText = time++;
 }, 500);
+
 createCactus();
-document.addEventListener('keyup', handleKeyUp)
+

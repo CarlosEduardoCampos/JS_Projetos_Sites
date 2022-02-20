@@ -15,16 +15,6 @@ const red = document.querySelector('.red');
 const green = document.querySelector('.green');
 const yellow = document.querySelector('.yellow');
 
-
-//Pausa o programa por alguns segundos
-function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-      currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-}
-
 //Cria ordem aleatoria de cores
 let shuffleOrder = () =>{
     let colorOrder = Math.floor(Math.random() * 4);
@@ -45,11 +35,11 @@ let lightColor = (element)=>{
     setTimeout(() => {
         element.classList.add('selected');
         
-    },1000);
+    },100);
 
     setTimeout(() => {
         element.classList.remove('selected');
-    }),300;
+    }),500;
 }
 
 // checa se os botões clicados são os mesmos da ordem gerada no jogo
@@ -64,7 +54,7 @@ let checkOrder = () =>{
     }
     if (clickedOrder.length == order.length)
     {
-        alert('\n Você acertou! Iniciando próximo nível!\nPontuação: ',score);
+        alert('\n Você acertou! Iniciando próximo nível!\n Pontuação: ',score);
         nexLevel();
     }
 }
@@ -105,14 +95,14 @@ let nexLevel = () =>{
 
 // função para game over
 let gameOver = () =>{
-    alert('!\nVocê perdeu jogo!\nClique em OK para iniciar um novo jogo\nPontuação: ',score);
+    alert('\n Você perdeu jogo!\nClique em OK para iniciar um novo jogo\n Pontuação: ',score);
     order = [];
     clickedOrder = [];
     playGame();
 }
 
 let playGame = () => {
-    alert('Bem vindo ao Gênesis! Iniciando novo jogo');
+    alert('Bem vindo ao Genius! Iniciando novo jogo');
     score = 0;
 
     nexLevel();

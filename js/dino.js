@@ -6,6 +6,7 @@ let position = 0;
 let time = 0;
 
 // Reação de clicar spaço 
+
 function handleKeyUp(event)
 {
     if (event.keyCode == 32)
@@ -98,4 +99,5 @@ let somatime = setInterval(() => {
 }, 500);
 
 createCactus();
+
 

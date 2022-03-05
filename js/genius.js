@@ -1,4 +1,5 @@
 let order = [];
+let clickCount = 0;
 let clickedOrder = [];
 let score = 0;
 
@@ -15,21 +16,45 @@ const red = document.querySelector('.red');
 const green = document.querySelector('.green');
 const yellow = document.querySelector('.yellow');
 
+//Cria ligar e deligar cor
+const lightOn = (elementColor) =>{
+    elementColor.classList.add('selected');
+}
+
+const lightOff = (elementColor) =>{
+    elementColor.classList.remove('selected');
+}
+
 //Cria ordem aleatoria de cores
 let shuffleOrder = () =>{
     let colorOrder = Math.floor(Math.random() * 4);
 
     order[order.length] = colorOrder;
-    clickedOrder = [];
+    /*
+        clickedOrder = [];
 
-    for (let i = 0; i < order.length; i++)
-    {
-        let elementColor = createColorElement(order[i]);
-        lightColor(elementColor);     
-    }
+        for (let i = 0; i < order.length; i++)
+        {
+            let elementColor = createColorElement(order[i]);
+            lightColor(elementColor);     
+        }
+    */
+
+   setTimeout(() => { // tempo para iniciar
+       const blink = async()=>{
+           for(let i in order){
+               let elementColor = createColorElement(order[i]);
+               await new Promise((cooldown) => setTimeout(cooldown, time)) //tempo ligado blink
+               .then(new Promise((r) => lightOn(elementColor, r)))
+               new Promise((reso) => lightOff(elementColor, reso));
+               await new Promise((cooldown1) => setTimeout(cooldown1,time))
+           }
+       }
+       blink();
+   }, 500);
 }
 
-//Acende a procima cor
+/*//Acende a procima cor
 let lightColor = (element)=>{
 
     setTimeout(() => {
@@ -40,34 +65,38 @@ let lightColor = (element)=>{
     setTimeout(() => {
         element.classList.remove('selected');
     }),500;
-}
+}*/
 
 // checa se os botões clicados são os mesmos da ordem gerada no jogo
-let checkOrder = () =>{
-    for(let i in clickedOrder)
-    {
-        if(clickedOrder[i] != order[i])
-        {
-            gameOver();
-            break;
-        }
+let checkOrder = (color) =>{
+    let success = true;
+
+    if (color != order[clickCount]) {
+        success = false;
+        return gameOver();
     }
-    if (clickedOrder.length == order.length)
+    else{
+        clickCount++;
+    }
+
+    if(clickCount == order.length && success)
     {
-        alert('\n Você acertou! Iniciando próximo nível!\n Pontuação: ',score);
-        nexLevel();
+        score++;
+        alert(`Pontuação: ${score} \Você acertou! Iniando próximo nivel`);
+        return nextLevel();
     }
 }
 
 // função de click do usuario
 let click = (color) => {
-    clickedOrder[clickedOrder.length] = color;
-    createColorElement(color).classList.add('selected');
+    if (clickCount <= order.length){
+        createColorElement(color).classList.add('selected');
 
-    setTimeout(() =>{
-        createColorElement(color).classList.remove('selected');
-        checkOrder();
-    },100)
+        setTimeout(() => {
+            createColorElement(color).classList.remove('selected');
+            checkOrder(color,clickCount);
+        },250);
+    }
 }
 
 // função que retorna a cor
@@ -88,30 +117,29 @@ let createColorElement = (color) => {
 }
 
 // função para proximo nivel do jogo
-let nexLevel = () =>{
-    score++;
+let nextLevel = () =>{
+    clickCount = 0;
+    time -= score * 10;
     shuffleOrder();
 }
 
 // função para game over
 let gameOver = () =>{
-    alert('\n Você perdeu jogo!\nClique em OK para iniciar um novo jogo\n Pontuação: ',score);
+    alert(` Pontuação: ${score}! \n Você perdeu jogo! \n Clique em OK para iniciar um novo jogo \n`);
     order = [];
-    clickedOrder = [];
+    score = 0;
     playGame();
 }
 
 let playGame = () => {
     alert('Bem vindo ao Genius! Iniciando novo jogo');
+    order = [];
     score = 0;
-
-    nexLevel();
+    time = 500;
+    nextLevel();
 }
 
-/*green.addEventListener('click',click(0));
-red.addEventListener('click',click(1));
-yellow.addEventListener('click',click(2));
-blue.addEventListener('click',click(3));*/
+let time = 0;
 
 //eventos de clique para as cores
 green.onclick = () => click(0);

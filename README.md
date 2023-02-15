@@ -26,5 +26,13 @@ Matando a saudade de um dos meus jogos favoritos esse projeto recria o jogo da c
 
 *Jogo desenvolvido com aulas da plataforma DIO.*
 
+### IMC:
+*Tecnologias >>> JS, HTM, CSS*
+
+texto explicatixo 
+
+
+*https://www.youtube.com/watch?v=RacwEvoTz_Y&list=PLDgemkIT111AzoS1rB61sgMJbsEA4pyD2&index=2*
+
 
 

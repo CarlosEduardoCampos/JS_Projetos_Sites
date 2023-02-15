@@ -1,6 +1,5 @@
-# Site de Jogos
+# Projetos de Java Script
 
-Sites com projetos (jogos) desenvolvidos em JavaScript
+Sites com projetos desenvolvidos para desenvolver minhas abilidades com a linguangem JS
 
-:link:https://carloseduardocampos.github.io/Games_proj/
 

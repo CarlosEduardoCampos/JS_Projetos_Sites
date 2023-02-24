@@ -7,14 +7,46 @@ const RESULTADO = document.getElementById('resultado');
 
 function calcular()
 {
+    nome = NOME.value;
+    peso = PESO.value.replace(',', '.');
+    altura = ALTURA.value.replace(',', '.');
+    msg = ''
+
     if (campoVazio())
     {
         alert('Todos os campos devem ser preenchidos!');
     }
     else{
-        let imc = (PESO.value / (ALTURA.value ** 2));
+        let imc = (peso / (altura ** 2));
 
-        RESULTADO.innerHTML = '<p><i>'+imc+'</i></p>'
+        msg = `<i>${nome} seu IMC é ${imc.toFixed(1)} e você está `;
+
+        if (imc < 18.6) 
+        {
+            msg += 'abaixo do peso <i>';
+        }
+        else if( imc < 25)
+        {
+            msg += 'normal <i>';
+        } 
+        else if(imc < 30)
+        {
+            msg += 'acima do peso <i>';
+        }
+        else if(imc < 35)
+        {
+            msg += 'com obesidade grau I  <i>';
+        }
+        else if(imc < 40)
+        {
+            msg += 'com obesidade grau II  <i>';
+        }
+        if(40 < imc)
+        {
+            msg += 'com obesidade grau III  <i>';
+        }
+
+        RESULTADO.innerHTML = msg;
     }
 }
 

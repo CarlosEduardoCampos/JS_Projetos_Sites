@@ -2,6 +2,8 @@
 
 Sites com projetos desenvolvidos para aprimorar minhas habilidades com a linguagem Java Script.
 
+:eye_speech_bubble: :link:https://carloseduardocampos.github.io/JS_Site_Projetos/ :eyes: 
+
 ### Gênios:
 
 *Tecnologias >>> JS, HTM, CSS*
@@ -29,10 +31,13 @@ Matando a saudade de um dos meus jogos favoritos esse projeto recria o jogo da c
 ### IMC:
 *Tecnologias >>> JS, HTM, CSS*
 
-texto explicatixo 
+Uma ferrameta importante para saude e conhecer seu proprio corpo, nese projeto foi cria do um fomulario para calcular o IMC(inice de massa muscular) de uma pessoa.
+
+*link da aula -> https://www.youtube.com/watch?v=RacwEvoTz_Y&list=PLDgemkIT111AzoS1rB61sgMJbsEA4pyD2&index=2*
 
 
-*https://www.youtube.com/watch?v=RacwEvoTz_Y&list=PLDgemkIT111AzoS1rB61sgMJbsEA4pyD2&index=2*
+### Slide:
 
+Em varios sites nos deparamos com slide de imagens e promoções, nesse projeto e criado um slide
 
-
+*link da aula -> https://www.youtube.com/watch?v=csNYVAS2ex8&list=PLDgemkIT111AzoS1rB61sgMJbsEA4pyD2&index=5*

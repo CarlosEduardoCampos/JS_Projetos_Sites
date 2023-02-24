@@ -58,8 +58,9 @@ body{
 .resultado{
     width: 300px;
     height: 200px;
+    padding: 10px;
     background-color: white;
     border: 1px solid black;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
 }

@@ -4,6 +4,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
 .menu{
     height: 30px;
     width: 100%;

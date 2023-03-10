@@ -39,13 +39,21 @@ Uma ferrameta importante para saude e conhecer seu proprio corpo, nese projeto f
 
 
 ### Slide:
-
+*Tecnologias >>> JS, HTM, CSS*
 Em varios sites nos deparamos com slide de imagens e promoções, nesse projeto e criado um slide.
 
 *link da aula -> https://www.youtube.com/watch?v=csNYVAS2ex8&list=PLDgemkIT111AzoS1rB61sgMJbsEA4pyD2&index=5*
 
 ### Relógio:
+*Tecnologias >>> JS, HTM, CSS*
 
 Com tempo passando cada vez mais rapido, nesse projeto eu recrio um relógio para correr atraz do tempo perdirdo.
 
 *link da aula -> https://www.youtube.com/watch?v=Dq8S6wOeAdE&list=PLm-VCNNTu3LkjxCSToG4jGhkEGDknN2SI*
+
+### Jogo da Velha:
+*Tecnologias >>> JS, HTM, CSS*
+
+Não precisamasi
+
+*link da aula -> https://www.youtube.com/watch?v=0EiX9c4vzRs&list=PLm-VCNNTu3LkjxCSToG4jGhkEGDknN2SI&index=3*

@@ -58,7 +58,7 @@ search.addEventListener('click', () => {
         temperatura.innerHTML = `${parseInt((json.main.temp)-273)} <span>°C</span>`;
         description.innerHTML = `${json.weather[0].description}`;
         humidity.innerHTML = `${json.main.humidity}%`;
-        wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
+        wind.innerHTML = `${parseInt(json.wind.speed)}M/s`;
         weatherBox.style.display = '';
         weatherDetails.style.display = '';
         weatherBox.classList.add('fadeIn');

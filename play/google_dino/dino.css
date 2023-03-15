@@ -11,7 +11,7 @@ body{
     width: 30px;
 }
 #backgroud{
-    background-image: url(../img/background.png);
+    background-image: url(../../img/background.png);
     margin: 150px auto;
     display: flex;
     flex-direction: column-reverse;
@@ -21,7 +21,7 @@ body{
     border: solid 1px black;
 }
 #dino{
-    background-image: url(../img/dino_google.png);
+    background-image: url(../../img/dino_google.png);
     width: 60px;
     height: 60px;
     position: relative;
@@ -30,7 +30,7 @@ body{
 }
 
 .cactus{
-    background-image: url(../img/cactus.png);
+    background-image: url(../../img/cactus.png);
     width: 60px;
     height: 60px;
     margin-bottom: -60px;
@@ -48,7 +48,7 @@ body{
 }
 
 #backgroud{
-    background-image: url(../img/background.png);
+    background-image: url(../../img/background.png);
     margin: 150px auto;
     display: flex;
     flex-direction: column-reverse;

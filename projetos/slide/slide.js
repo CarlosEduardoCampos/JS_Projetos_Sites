@@ -4,31 +4,31 @@
 const IMAGES = [
     {
         'id': '0',
-        'url':'../img/lugar_00.jpg'
+        'url':'lugar_00.jpg'
     },
 
     {
         'id': '1',
-        'url':'../img/lugar_01.jpg'
+        'url':'lugar_01.jpg'
     },
 
     {
         'id': '2',
-        'url':'../img/lugar_02.jpg'
+        'url':'lugar_02.jpg'
     },
 
     {
         'id': '3',
-        'url':'../img/lugar_03.jpg'
+        'url':'lugar_03.jpg'
     },
     {
         'id': '5',
-        'url':'../img/lugar_05.jpg'
+        'url':'lugar_05.jpg'
     },
 
     {
         'id': '6',
-        'url':'../img/lugar_06.jpg'
+        'url':'lugar_06.jpg'
     }
 ]
 
@@ -39,7 +39,7 @@ const CONTAINER = document.getElementById('items');
 const loadImages = (images, container) =>{
     images.forEach(image => {
         container.innerHTML += `<div class='item'>
-            <img src = '${image.url}'>
+            <img src = '${'../../img/'+image.url}'>
         </div>`
     });
 }

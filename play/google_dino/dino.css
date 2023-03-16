@@ -1,5 +1,5 @@
 body{
-    background-color: #fafafa;
+    background: linear-gradient(to right, #233329, #41b883);
 }
 .score{
     position: absolute;

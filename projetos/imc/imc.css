@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color:  rgb(73, 186, 192);
+    background: linear-gradient(to right, #233329, #41b883);
 }
 .container{
     background-color: wheat;

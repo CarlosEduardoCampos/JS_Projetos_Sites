@@ -6,7 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Projetos</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="icones/projetos.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body{
+            overflow-x: hidden;
+            background: linear-gradient(to right, #233329, #41b883);
+        }
+
+        main{
+            padding: 30px;
+            background: linear-gradient(to right, #233329, #41b883);
+        }
+        .menu{
+            height: 40px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.664);
+            display: block;
+            padding: 5px;
+        }
+
+        .menu p{
+            color: white;
+            padding: 15px;
+        }
+
+        .corpo{
+            background-color: rgba(255, 255, 255, 0.664);
+            margin: 30px auto;
+            max-width: 700px;
+            border: solid 1px black;
+            border-radius: 40px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.295);
+        }
+
+        h1{
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.575);
+            margin: 10px;
+        }
+
+        h2{
+            font-size: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.575);
+            margin: 10px;
+        }
+        .container{
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px;
+            justify-content: space-evenly;
+        }
+
+        .item{
+            width: 120px;
+            height: 120px;
+            border:solid 2px rgba(0, 0, 0, 0.295);
+            border-radius: 20px;
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.295);
+        }
+
+        .item:hover{
+            background-color: rgba(255, 251, 0, 0.322);
+        }
+        .item img{
+            width: 60px;
+            height: 60px;
+        }
+
+        .item p{
+            color: black;
+            font-size: 20px;
+            font-weight: 900;
+        }
+    </style>
 </head>
 <body onclick="jump()">
     <header class="menu">
@@ -71,6 +157,11 @@
                     <img src="./img/lista.png" alt="Bloco com simbolo de perguta">
                     <p>Tarefas</p>
                 </a>
+
+                <a href="./projetos/calculadora/src/index.html" class="item" onclick="naoExiste()">
+                    <img src="./img/block.png" alt="Bloco com simbolo de perguta">
+                    <p>???</p>
+                </a>
                 <!-- html padrão para projetos não finalizados
                 <a href="#" class="item" onclick="naoExiste()">
                     <img src="./img/block.png" alt="Bloco com simbolo de perguta">
@@ -81,6 +172,11 @@
         </section>
     </main>
 
-    <script src="./js/index.js"></script>
+    <script>
+        function naoExiste() 
+        {
+            alert('O projeto selecionado ainda esta em desenvolvimento.')    
+        }
+    </script>
 </body>
 </html>

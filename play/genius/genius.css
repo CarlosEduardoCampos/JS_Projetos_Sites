@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(208, 255, 239);
+    background: linear-gradient(to right, #233329, #41b883);
 }
 .score{
     border: solid 1px black;

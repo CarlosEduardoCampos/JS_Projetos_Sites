@@ -99,7 +99,13 @@ class Calculataor{
 
     // Faz a operação matematica e renova os dados
     chooseOperation(operator){
-        if (this.currentOperand === '') return;
+        if (this.currentOperand === ''){
+            this.operantion = operator;
+            this.updateDisplay();
+            return;
+        };
+
+        if (this.currentOperand === '.') return;
 
         if (this.previousOperand != ''){
             this.currentOperand = this.calculate();
@@ -142,3 +148,19 @@ equalsButton.addEventListener('click', () => calculator.equalsOperation());
 
 // Espera um evento de click no botão =
 deleteButton.addEventListener('click', () => calculator.delete());
+
+
+// Espera um evento de tecla subindo 
+addEventListener('keyup', (event) => {
+    let key = event.key;
+    const listKey = '1234567890.'
+    const listOperator = '+-/*='
+
+    if(listKey.includes(key)) calculator.appendNumber(key);
+    
+    if(listOperator.includes(key))calculator.chooseOperation(key);
+
+    if (key === 'Backspace') calculator.delete();
+
+    if (key === 'Delete') calculator.clear();
+});

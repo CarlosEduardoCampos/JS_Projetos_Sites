@@ -45,7 +45,6 @@ Uma ferramenta importante para saúde e conhecer seu próprio corpo, nesse proje
 
 
 
-
 ### Slide:
 *Tecnologias >>> JS, HTM, CSS*
 
@@ -73,7 +72,6 @@ Não precisa mas de papel e caneta, se quiser jogar o jogo da velha tá ai mais 
 
 
 
-
 ### Clima Tempo:
 *Tecnologias >>> JS, HTML, CSS*
 
@@ -93,3 +91,12 @@ Para organização do tempo nada melhor que se organizar, esse projeto cria uma 
 
 *link da aula -> https://www.youtube.com/watch?v=0bNeKAzVvlE&list=PLm-VCNNTu3LkjxCSToG4jGhkEGDknN2SI&index=4*
 
+
+
+### Calculadora:
+
+Tecnologias >>> JS, HTML, CSS
+
+Recriando uma calculadora com Java Escript.
+
+*link da aula -> https://www.youtube.com/watch?v=93wPYo1pjic&list=PLm-VCNNTu3LkjxCSToG4jGhkEGDknN2SI&index=5*

@@ -34,6 +34,7 @@ const IMAGES = [
 
 // Area onde as imagens seram mostradas
 const CONTAINER = document.getElementById('items');
+const SELECT = document.getElementsByClassName('.selected');
 
 // Função que cria uma seguencia de imagens dentro de uma div 
 const loadImages = (images, container) =>{

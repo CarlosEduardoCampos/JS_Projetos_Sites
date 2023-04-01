@@ -12,7 +12,7 @@
     display: none;
     flex-direction: column;
     text-align: center;
-    width: 80%;
+    width: 100%;
 }
 #navbar_items > li:nth-child(2){
     border-top: 1px solid var(--blakColor_3);

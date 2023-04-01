@@ -228,4 +228,5 @@ a{
     color: var(--fontColor);
     padding: 30px;
     text-align: center;
+    width: 100%;
 }

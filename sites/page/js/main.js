@@ -13,7 +13,7 @@ const LOGOS  = [
 const loadLogos = (images, container) => {
     images.forEach(img => {
         try {
-            container.innerHTML +=  `<img src='${'../img/'+img.url}' alt='${img.url}'>`;
+            container.innerHTML +=  `<img src='${'../img/'+img.url}' alt='${img.url}' class='client'>`;
         } 
         catch (error) {
             console.log(error)
@@ -25,7 +25,7 @@ const loadLogos = (images, container) => {
 loadLogos(LOGOS, LOGO_CONTAINER);
 
 // Seleciona container de Galeria
-const GALERIA_CONTAINER = document.querySelector('.gallerry_container');
+const GALERIA_CONTAINER = document.querySelector('#gallerry_container');
 
 // Lista o nome dos arquivos de imagem da galeeria
 const IMAGES = [
@@ -40,30 +40,26 @@ const IMAGES = [
 // Cria cria a tag img e add ao container
 const loadImages = (images, container) =>{
     images.forEach(img => {
-        container.innerHTML += `<img src='${'../img/'+img.url}' alt="${img.url}">`;
+        container.innerHTML += `<img src='${'../img/'+img.url}' alt="${img.url}" class='gallerry-image'>`;
     });
 }
 
 // Cria lista de imagens da galeria
 loadImages(IMAGES, GALERIA_CONTAINER);
 
-/*
-// Smooth Scrolling
-$("#navbar a, .btn").on("click", function (event) {
-    if (this.hash !== "") {
-        event.preventDefault();
 
-        const hash = this.hash;
+const MENU_ITEMS= document.getElementById('navbar_items');
+const HAMBURGUER = document.querySelector('#navbar_hamburguer');
 
-        $("html, body").animate(
-            {
-                scrollTop: $(hash).offset().top - 100
-            },
-            800
-        );
+HAMBURGUER.addEventListener('click', () => {
+    if (MENU_ITEMS.style.display === 'none') {
+        MENU_ITEMS.style.display = 'flex';
+    }
+    else {
+        MENU_ITEMS.style.display = 'none';
     }
 });
-
+/*
 // Sticky menu background
 window.addEventListener("scroll", function () {
     if (window.scrollY > 150) {
@@ -72,5 +68,3 @@ window.addEventListener("scroll", function () {
         document.querySelector("#navbar").style.opacity = 1;
     }
 });*/
-
-

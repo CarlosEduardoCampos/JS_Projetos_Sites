@@ -5,32 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoftNouse</title>
-    <!-- Estilo da Pagina -->
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- Estilo da Pagina Web-->
+    <link rel="stylesheet" href="./css/web.css">
+    <!-- Estilo da Pagina Mobile -->
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/mobile.css">
     <!-- Font Awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav id="nav_bar">
-        <div id="container">
+    <nav id="navbar">
+        <div id="navbar_container">
             <h1 class="logo"> SoftNouse </h1>
-            <ul class="nav_bar_items">
-                <li>Inicio</li>
-                <li>Sobre</li>
-                <li>Galeria</li>
+            <ul id="navbar_hamburguer"><li><i class="fa fa-bars"></i></li></ul>
+            <ul id="navbar_items">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#clients">Sobre</a></li>
+                <li><a href="#gallerry">Galeria</a></li>
             </ul>
         </div>
     </nav>
     <header id="showcase">
-        <div id="show_case_container">
+        <div id="showcase_container">
             <h2> Lorem ipsum dolor sit amet.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, modi?</p>
-            <a href="" class="btn"></a>
+            <a href="" class="btn">Saiba Mais</a>
         </div>
     </header>
     <main>
         <section id="clients">
-            <div class="headline"></div>
+            <div class="headline">Nossos Clientes</div>
             <div class="clients_container"></div>
         </section>
         <section id="features">
@@ -87,11 +90,15 @@
                     <img src="/img/person-1.jpeg" alt="foto" class="testimonial_image">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quos repudiandae enim autem consectetur distinctio eveniet explicabo est dolores ducimus.</p>
                 </div>
+                <div class="testimonial">
+                    <img src="/img/person-2.jpeg" alt="foto" class="testimonial_image">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quos repudiandae enim autem consectetur distinctio eveniet explicabo est dolores ducimus.</p>
+                </div>
             </div>
         </section>
         <section id="gallerry">
-            <div class="hedline">Galeria</div>
-            <div class="gallerry_container"></div>
+            <div class="headline">Galeria</div>
+            <div id="gallerry_container"></div>
         </section>
     </main>
     <footer id="footer">

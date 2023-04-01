@@ -13,7 +13,7 @@ const LOGOS  = [
 const loadLogos = (images, container) => {
     images.forEach(img => {
         try {
-            container.innerHTML +=  `<img src='${'../img/'+img.url}' alt='${img.url}' class='client'>`;
+            container.innerHTML +=  `<img src='${'./img/'+img.url}' alt='${img.url}' class='client'>`;
         } 
         catch (error) {
             console.log(error)
@@ -40,7 +40,7 @@ const IMAGES = [
 // Cria cria a tag img e add ao container
 const loadImages = (images, container) =>{
     images.forEach(img => {
-        container.innerHTML += `<img src='${'../img/'+img.url}' alt="${img.url}" class='gallerry-image'>`;
+        container.innerHTML += `<img src='${'./img/'+img.url}' alt="${img.url}" class='gallerry-image'>`;
     });
 }
 

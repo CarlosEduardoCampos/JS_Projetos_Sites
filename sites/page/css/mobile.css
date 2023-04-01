@@ -12,7 +12,7 @@
     display: none;
     flex-direction: column;
     text-align: center;
-    width: 100%;
+    width: 80%;
 }
 #navbar_items > li:nth-child(2){
     border-top: 1px solid var(--blakColor_3);
@@ -64,5 +64,5 @@
     grid-template-columns: 1fr;
 }
 .gallerry_image{
-    width: 100%;
+    width: 90%;
 }

@@ -208,7 +208,7 @@ a{
 /*Gallery*/
 #gallerry{
     margin: auto;
-    padding: 50px;
+    padding: 40px;
 }
 #gallerry_container{
     display: grid;

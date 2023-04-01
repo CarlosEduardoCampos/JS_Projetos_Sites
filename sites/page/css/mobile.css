@@ -60,9 +60,13 @@
     text-align: center;
 }
 /*Gallerry*/
+#gallerry{
+    margin: 10px;
+    padding: 40px;
+}
 #gallerry_container{
     grid-template-columns: 1fr;
 }
 .gallerry_image{
-    width: 90%;
+    width: 80%;
 }

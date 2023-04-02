@@ -209,7 +209,6 @@ a{
 /*Gallery*/
 #gallerry{
     margin: auto;
-    padding: 40px;
 }
 #gallerry_container{
     display: grid;
@@ -219,8 +218,8 @@ a{
 }
 .gallerry-image{
     display:inline-block;
-    width: 400px;
-    height: 260px;
+    max-width: 400px;
+    max-height: 260px;
     border-radius: 5px;
 }
 /*Footer*/

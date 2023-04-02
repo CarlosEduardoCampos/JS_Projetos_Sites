@@ -14,6 +14,11 @@
     text-align: center;
     width: 100%;
 }
+.logo{
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 50%;
+}
 #navbar_items > li:nth-child(2){
     border-top: 1px solid var(--blakColor_3);
     border-bottom: 1px solid var(--blakColor_3);
@@ -61,13 +66,12 @@
 }
 /*Gallerry*/
 #gallerry{
-    width: 100%;
     margin: 10px;
-    padding: 40px;
+    padding: 10px;
 }
 #gallerry_container{
     grid-template-columns: 1fr;
 }
 .gallerry_image{
-    width: 80%;
+    width: 70%;
 }

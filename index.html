@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Projetos</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>Portifolio&Projetos</title>
+    <link rel="shortcut icon" href="./icones/page_project.ico" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Roboto:wght@400;500;700&display=swap');
 
         * {
             margin: 0;
@@ -15,61 +16,112 @@
             box-sizing: border-box;
             font-family: "Poppins", sans-serif;
         }
-
         body{
             overflow-x: hidden;
-            background: linear-gradient(to right, #233329, #41b883);
+            background: #222;
         }
-
-        main{
-            padding: 30px;
-            background: linear-gradient(to right, #233329, #41b883);
+        .headline{
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 50px;
+            letter-spacing: 2px;
+        }
+        .subheadline{
+            background-color: #eee;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 20px;
+            letter-spacing: 2px;
+            margin-top: -40px;
+        }
+        .subheadline > img{
+            width: 70px;
         }
         .menu{
-            height: 40px;
-            width: 100%;
+            position: fixed;
+            height: 50px;
+            width: 100vw;
             background-color: rgba(255, 255, 255, 0.664);
             display: block;
             padding: 5px;
+            z-index: 1;
         }
-
-        .menu p{
-            color: white;
-            padding: 15px;
-        }
-
-        .corpo{
-            background-color: rgba(255, 255, 255, 0.664);
-            margin: 30px auto;
-            max-width: 700px;
-            border: solid 1px black;
-            border-radius: 40px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.295);
-        }
-
-        h1{
-            font-size: 40px;
-            text-align: center;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.575);
-            margin: 10px;
-        }
-
-        h2{
-            font-size: 20px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.575);
-            margin: 10px;
-        }
-        .container{
-            margin: auto;
+        #show_image{
+            height: 100vh;
             display: flex;
-            flex-wrap: wrap;
-            padding: 5px;
-            justify-content: space-evenly;
+            justify-content: center;
+            align-items: center;
+            color: var(--fontColor);
+            background: url('./img/show.jpg') no-repeat center center/cover;
+            /*imagen não sofre efeito do scrow*/
+            background-attachment: fixed;
+            /* Overley*/
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: color;
         }
-
+        .show_image_container{
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: #eee;
+            padding: 25px;
+            border-radius: 40px;
+        }
+        .show_image_container > h2{
+            font-size: 3rem;
+            text-transform: capitalize;
+        }
+        .show_image_container > p{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+        #tec{
+            background: #eee;
+            padding: 30px;
+        }
+        #tec > .tec_container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            padding: 50px;
+            margin: auto;
+        }
+        #tec > .tec_container > .tec_item{
+            max-width: 100px;
+        }
+        #games{
+            color: #eee;
+            padding: 30px;
+        }
+        .games_container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            margin: 30px auto;
+            width: 90%;
+        }
+        #projects{
+            background: #eee;
+            padding: 30px;
+        }
+        .projects_container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            margin: 30px auto 100px auto;
+            width: 90%;
+            border: solid;
+        }
         .item{
-            width: 120px;
-            height: 120px;
+            background-color: #eee;
+            width: 80%;
             border:solid 2px rgba(0, 0, 0, 0.295);
             border-radius: 20px;
             margin: 20px;
@@ -78,15 +130,13 @@
             text-decoration: none;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.295);
         }
-
         .item:hover{
-            background-color: rgba(255, 251, 0, 0.322);
+            background-color: #999;
         }
         .item img{
             width: 60px;
             height: 60px;
         }
-
         .item p{
             color: black;
             font-size: 20px;
@@ -95,15 +145,22 @@
     </style>
 </head>
 <body onclick="jump()">
-    <header class="menu">
-        
+    <nav class="menu"></nav>
+    <header id="show_image">
+        <div class="show_image_container">
+            <h2> Seja Bem vindo</h2>
+            <p>Essa é minha história criativa em constante evolução.</p>
+            <a href="" class="btn">Saiba Mais</a>
+        </div>
     </header>
-
     <main>
-        <section class="corpo">
-            <h1> 💣 Jogos 🕹️	</h1>
-            <hr>
-            <div class="container">
+        <section id="tec">
+            <h3 class="headline"> Tecnologias </h3>
+            <div class="tec_container"></div>
+        </section>
+        <section id="games">
+            <h3 class="headline"> Jogos </h1>
+            <div class="games_container">
                 <a href="./play/genius/genius_play.html" class="item">
                     <img src="./img/genius.png" alt="foto de um cubo com um sinal de perguta">
                     <p>Genius</p>
@@ -123,16 +180,44 @@
                     <img src="./img/velha.png" alt="desenho jogo da velha">
                     <p>Velha</p>
                 </a>
-
             </div>
         </section>
     
-        <section class="corpo">
-            <h1> ⏰ Projetos 📒 </h1>
-            <hr>
-            <h2>Java Script:</h2>
-            <hr>
-            <div class="container">
+        <section id="projects">
+            <h3 class="headline"> Projetos </h1>
+            <div class="projects_container">
+                <h4 class="subheadline">
+                    <img src="./img/site.png" alt="logo javascript">
+                    Meus Sites
+                </h4>
+
+                <a href="./sites/page/index.html" class="item">
+                    <img src="./img/website.png" alt="site pronto">
+                    <p>SoftNouse</p>
+                </a>
+
+                <a href="./sites/climaTempo/src/index.html" class="item">
+                    <img src="./sites/climaTempo/img/snow.png" alt="desenho de uma nuvem de chuva e neve">
+                    <p>Clima</p>
+                </a>
+
+                <a href="./sites/listaTerefas/src/index.html" class="item">
+                    <img src="./img/lista.png" alt="lista e lápis">
+                    <p>Tarefas</p>
+                </a>
+
+                <!-- html padrão para projetos não finalizados
+                <a href="#" class="item" onclick="naoExiste()">
+                    <img src="./img/block.png" alt="Bloco com simbolo de perguta">
+                    <p>???</p>
+                </a>
+                -->
+            </div>
+            <div class="projects_container">
+                <h4 class="subheadline">
+                    <img src="./img/javascript.png" alt="logo javascript">
+                    JavaScript
+                </h4>
                 <a href="./projetos/imc/imc.html" class="item">
                     <img src="./img/imc.png" alt="Figura de um homem acima do peso">
                     <p>IMC</p>
@@ -148,24 +233,9 @@
                     <p>Relógio</p>
                 </a>
 
-                <a href="./sites/climaTempo/src/index.html" class="item">
-                    <img src="./sites/climaTempo/img/snow.png" alt="desenho de uma nuvem de chuva e neve">
-                    <p>Clima</p>
-                </a>
-
-                <a href="./sites/listaTerefas/src/index.html" class="item">
-                    <img src="./img/lista.png" alt="lista e lápis">
-                    <p>Tarefas</p>
-                </a>
-
                 <a href="./projetos/calculadora/src/index.html" class="item" >
                     <img src="./img/calculadora.png" alt="uma calculadora">
                     <p>Calcular</p>
-                </a>
-
-                <a href="./sites/page/index.html" class="item">
-                    <img src="./img/block.png" alt="Bloco com simbolo de perguta">
-                    <p>???</p>
                 </a>
 
                 <!-- html padrão para projetos não finalizados
@@ -179,9 +249,39 @@
     </main>
 
     <script>
+        const TEC_CONTAINER = document.querySelector('.tec_container');
+
+        const TEC_LOGOS = [
+            {
+                'url':'html.png',
+                'nome':'HTML'
+            },
+            {
+                'url':'css.png',
+                'nome':'CSS'
+            },
+            {
+                'url':'javascript.png',
+                'nome':'JavaScript'
+            },
+            {
+                'url':'node.png',
+                'nome':'Node.js'
+            }
+        ]
+
+        const listaTecnologias = (logos, container) => {
+            logos.forEach(logo => {
+                container.innerHTML += `<img src="/img/${logo.url}" alt="${logo.nome}" class="tec_item">`
+            });
+        }
+
+        listaTecnologias(TEC_LOGOS, TEC_CONTAINER);
+
+        // Alerta de projeto em desenvolvimento
         function naoExiste() 
         {
-            alert('O projeto selecionado ainda esta em desenvolvimento.')    
+            alert('O projeto selecionado ainda esta em desenvolvimento.'); 
         }
     </script>
 </body>

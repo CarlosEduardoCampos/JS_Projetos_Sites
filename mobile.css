@@ -1,0 +1,32 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+#left{
+    float: none;
+    position: relative;
+    text-align: center;
+    grid-column: 1;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    color:#eee
+}
+#left > img{
+    margin-left: 0;
+}
+#right{
+    float: none;
+    width: 100vw;
+}
+#tec > .tec_container{
+    grid-template-columns: repeat(2, 1fr);
+}
+.games_container{
+    grid-template-columns: repeat(2, 1fr);
+}
+.projects_container{
+    grid-template-columns: repeat(2, 1fr);
+}

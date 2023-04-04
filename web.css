@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Roboto:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body{
+            overflow-x: hidden;
+            background: #222;
+            width: 100vw;
+            height:100vh;
+        }
+        a{
+            text-decoration: none;
+            color: #eee;
+        }
+        #left{
+            float: left;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            text-align: center;
+            width: 30vw;
+            height: 100vh;
+            padding: 20px;
+            align-items: center;
+            color:#eee
+        }
+        #left > img{
+            text-align: center;
+            width: 200px;
+            border-radius: 50%;
+            margin-left: 10%;
+            margin-top: 70px;
+        }
+        #left > ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            text-align: center;        
+        }
+        #left > ul > li{
+            cursor: pointer;
+            margin-top: 30px;
+            padding: 20px;
+        }
+        #left > ul > li > i{
+            margin-right: 10px;
+        }
+        #right{
+            float: right;
+            width: 70vw;
+        }
+        .headline{
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 50px;
+            letter-spacing: 2px;
+        }
+        .subheadline{
+            background-color: #eee;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 20px;
+            letter-spacing: 2px;
+            margin-top: -80px;
+        }
+        .subheadline > img{
+            width: 70px;
+        }
+        .menu{
+            position: fixed;
+            height: 50px;
+            width: 100vw;
+            background-color: rgba(255, 255, 255, 0.664);
+            display: block;
+            padding: 5px;
+            z-index: 1;
+        }
+        #show_image{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--fontColor);
+            background: url('./img/show.jpg') no-repeat center center/cover;
+            /*imagen não sofre efeito do scrow*/
+            background-attachment: fixed;
+            /* Overley*/
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: color;
+        }
+        .show_image_container{
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: #eee;
+            padding: 25px;
+            border-radius: 40px;
+        }
+        .show_image_container > h2{
+            font-size: 3rem;
+            text-transform: capitalize;
+        }
+        .show_image_container > p{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+        #tec{
+            background: #eee;
+            padding: 30px;
+        }
+        #tec > .tec_container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+        }
+        #tec > .tec_container > .tec_item{
+            max-width: 50%;
+            margin: 30px;
+        }
+        #games{
+            position: relative;
+            color: #eee;
+            padding: 30px;
+        }
+        .games_container{
+            display: grid;
+            gap: 50px;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            margin: 30px auto;
+            width: 90%;
+        }
+        #projects{
+            background: #eee;
+            padding: 30px;
+        }
+        .projects_container{display: grid;
+            gap: 50px;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            width: 100%;
+            margin: 30px auto 100px auto;
+            padding: 30px;
+            border: solid;
+        }
+        .item{
+            background-color: #eee;
+            width: 100%;
+            border:solid 2px rgba(0, 0, 0, 0.295);
+            border-radius: 20px;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.295);
+        }
+        .item:hover{
+            background-color: #999;
+        }
+        .item img{
+            width: 60px;
+            height: 60px;
+        }
+        .item p{
+            color: black;
+            font-size: 20px;
+            font-weight: 900;
+        }

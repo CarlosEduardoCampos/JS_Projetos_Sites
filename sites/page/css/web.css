@@ -6,10 +6,14 @@
     --blakColor_3:#333;
     --fontColor:#eee;
 }
+html {
+  scroll-behavior: smooth;
+}
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 body{
     overflow-x: hidden;

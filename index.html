@@ -148,7 +148,7 @@
 
         const listaTecnologias = (logos, container) => {
             logos.forEach(logo => {
-                container.innerHTML += `<img src="/img/${logo.url}" alt="${logo.nome}" class="tec_item">`
+                container.innerHTML += `<img src="./img/${logo.url}" alt="${logo.nome}" class="tec_item">`
             });
         }
 
@@ -160,16 +160,5 @@
             alert('O projeto selecionado ainda esta em desenvolvimento.'); 
         }
     </script>
-    <script>
-        const links = document.querySelectorAll('a');
-      
-        for (let i = 0; i < links.length; i++) {
-          links[i].addEventListener("click", (event) => {
-            event.preventDefault();
-            const target = document.querySelector(links[i].getAttribute("href"));
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
-          });
-        }
-      </script>
 </body>
 </html>

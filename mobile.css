@@ -17,6 +17,13 @@ main{
 #left > img{
     margin-left: 0;
 }
+#left > ul > li{
+    flex-direction: column;
+    margin-top: 0;
+}
+#left > ul > li > i{
+    width: 100%;
+}
 #right{
     float: none;
     width: 100vw;

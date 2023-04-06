@@ -80,7 +80,6 @@ a{
     display: flex;
     list-style: none;
     text-transform: uppercase;
-
 }
 #navbar_items > li{
     padding: 10px;

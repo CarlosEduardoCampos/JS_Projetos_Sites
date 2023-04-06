@@ -13,9 +13,12 @@
             width: 100vw;
             height:100vh;
         }
+        ul{
+            list-style: none;
+        }
         a{
             text-decoration: none;
-            color: #eee;
+            color: inherit;
         }
         #left{
             float: left;
@@ -36,6 +39,9 @@
             margin-left: 10%;
             margin-top: 70px;
         }
+        #left > img:hover {
+            transform: rotate(0deg);
+          }
         #left > ul{
             list-style: none;
             display: flex;
@@ -80,13 +86,29 @@
             width: 70px;
         }
         .menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: fixed;
             height: 50px;
             width: 100vw;
-            background-color: rgba(255, 255, 255, 0.664);
-            display: block;
-            padding: 5px;
+            background-color: #eee;
+            padding: 20px;
             z-index: 1;
+        }
+        .menu > ul{
+            display: flex;
+            list-style: none;
+            text-transform: uppercase;
+            gap: 20px;
+        }
+        .menu > ul > li{
+            padding: 5px;
+            transition: .5s;
+        }
+        .menu > ul > li:hover{
+            background: #444;
+            color: #eee;
         }
         #show_image{
             height: 100vh;
@@ -118,7 +140,7 @@
         }
         #tec{
             background: #eee;
-            padding: 30px;
+            padding: 50px;
         }
         #tec > .tec_container{
             display: grid;
@@ -132,7 +154,7 @@
         #games{
             position: relative;
             color: #eee;
-            padding: 30px;
+            padding: 50px;
         }
         .games_container{
             display: grid;
@@ -144,7 +166,7 @@
         }
         #projects{
             background: #eee;
-            padding: 30px;
+            padding: 50px;
         }
         .projects_container{display: grid;
             gap: 50px;

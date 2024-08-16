@@ -46,24 +46,17 @@
                 </div>
             </header>
 
+            <!--Lista de tecnologias que domino-->
             <div id="tec">
                 <h3 class="headline"> Tecnologias </h3>
-                <div class="tec_container"></div>
+                <div class="tec_container">
+                    <!--Conteudo gerado via js-->
+                </div>
             </div>
         
             <div id="projects">
                 <h3 class="headline"> Projetos </h1>
                 <div class="projects_container">
-                    <h4 class="subheadline">
-                        <img src="./img/site.png" alt="logo javascript">
-                        Meus Sites
-                    </h4>
-    
-                    <a href="./sites/page/index.html" class="item">
-                        <img src="./img/website.png" alt="site pronto">
-                        <p>SoftNouse</p>
-                    </a>
-                    
                     <!-- html padrão para projetos não finalizados
                     <a href="#" class="item" onclick="naoExiste()">
                         <img src="./img/block.png" alt="Bloco com simbolo de perguta">
@@ -71,86 +64,10 @@
                     </a>
                     -->
                 </div>
-                <div class="projects_container">
-                    <h4 class="subheadline">
-                        <img src="./img/javascript.png" alt="logo javascript">
-                        JavaScript
-                    </h4>
-                    <a href="./projetos/imc/imc.html" class="item">
-                        <img src="./img/imc.png" alt="Figura de um homem acima do peso">
-                        <p>IMC</p>
-                    </a>
-        
-                    <a href="./projetos/slide/slide.html" class="item" onclick="pc()">
-                        <img src="./img/slide.png" alt="Uma tela com setas para dois lados diferentes">
-                        <p>Slide</p>
-                    </a>
-        
-                    <a href="./projetos/relogio/relogio.html" class="item" onclick="pc()">
-                        <img src="./img/clock.png" alt="desenho de uma cobra">
-                        <p>Relógio</p>
-                    </a>
-    
-                    <a href="./projetos/calculadora/src/index.html" class="item" >
-                        <img src="./img/calculadora.png" alt="uma calculadora">
-                        <p>Calcular</p>
-                    </a>
-                </div>
-
-                <div class="projects_container">
-                    <h4 class="subheadline">
-                        <img src="./img/css.png" alt="logo css" style="width: 50%;">
-                    </h4>
-                    <a href="./projetos/cartao/index.html" class="item">
-                        <img src="./img/card.png" alt="Figura de um cartão de credito">
-                        <p>IMC</p>
-                    </a>
-                </div>
-            </div>
         </section>
     </main>
 
-    <script>
-        const TEC_CONTAINER = document.querySelector('.tec_container');
-
-        const TEC_LOGOS = [
-            {
-                'url':'html.png',
-                'nome':'HTML'
-            },
-            {
-                'url':'css.png',
-                'nome':'CSS'
-            },
-            {
-                'url':'javascript.png',
-                'nome':'JavaScript'
-            },
-            {
-                'url':'node.png',
-                'nome':'Node.js'
-            }
-        ]
-
-        const listaTecnologias = (logos, container) => {
-            logos.forEach(logo => {
-                container.innerHTML += `<img src="./img/${logo.url}" alt="${logo.nome}" class="tec_item">`
-            });
-        }
-
-        listaTecnologias(TEC_LOGOS, TEC_CONTAINER);
-
-        // Alerta de projeto em desenvolvimento
-        function naoExiste() 
-        {
-            alert('O projeto selecionado ainda esta em desenvolvimento.'); 
-        }
-
-        // Alerta de projeto em somente para computadores
-        function pc() 
-        {
-            alert('Modelo desenvolvido somente para Computadores de Mesa ou Notebooks.'); 
-        }
-    </script>
+    <script src="js/ListTec.js"></script>
+    <script src="js/ListPro.js"></script>
 </body>
 </html>

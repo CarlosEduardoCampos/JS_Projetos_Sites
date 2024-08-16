@@ -165,8 +165,9 @@
             width: 90%;
         }
         #projects{
-            background: #eee;
+            position: relative;
             padding: 50px;
+            color: #eee;
         }
         .projects_container{display: grid;
             gap: 50px;

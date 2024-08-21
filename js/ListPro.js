@@ -6,14 +6,21 @@ const PROJ_CONTAINER = document.querySelector('.projects_container');
                 'href':'./sites/page/index.html',
                 'src':'./img/site.png',
                 'alt':'Projeto site institucional',
-                'nome':'SoftNose'
+                'nome':'Empresarial'
+            },
+            {
+                'func':'',
+                'href':'./sites/socialPage/index.html',
+                'src':'./img/site.png',
+                'alt':'Projeto site Social Midia',
+                'nome':'Social'
             },
             {
                 'func':'onclick="naoExiste()"',
                 'href':'#',
                 'src':'./img/block.png',
                 'alt':'Projeto em desenvolvomento',
-                'nome':'??????'
+                'nome':'?????'
             },
         ]
 

@@ -83,13 +83,51 @@
 #garis_container > #items > .item i{
     font-size: 2.3rem;
 }
-/*Gallerry*/
-#gallerry_container{
-    display: flex;
+
+/* natureza */
+#natureza_container{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-.gallerry-image{
+#natureza_container > #items{
     width: 90%;
+}
+#natureza_container > #items > .item{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+#natureza_container > #items > .item i{
+    font-size: 2.3rem;
+}
+
+/* saude */
+#saude_container{
+    flex-direction: column;
+}
+#saude_container > #items{
+    width: 90%;
+}
+#saude_container > #items > .item{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+#saude_container > #items > .item i{
+    font-size: 2.3rem;
+}
+
+/* combate */
+#combate_container{
+    flex-direction: column;
+}
+#combate_container > #items{
+    width: 90%;
+}
+#combate_container > #items > .item{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+#combate_container > #items > .item i{
+    font-size: 2.3rem;
 }

@@ -1,0 +1,95 @@
+#navbar{
+    max-height: 100px
+}
+#navbar_container{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+}
+#navbar_hamburguer{
+    display: block;
+}
+#navbar_items{
+    position: absolute;
+    margin-top: 40px;
+    width: 100vw;
+    background: var(--fontColor);
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+.logo{
+    cursor: pointer;
+    margin-left: 50%;
+    margin-top: -70px;
+}
+#navbar_items > li{
+    border-top: 1px solid var(--blakColor_3);
+}
+
+/*Showcase*/
+#showcase{
+    background: url('../img/showcase.png') no-repeat;
+    background-size: cover;
+    /* Overley*/
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: color;
+}
+#showcase_container{
+    padding: 40px;
+}
+/* Clients */
+.clients_container{
+    grid-template-columns: repeat(2, 1fr);
+}
+.client{
+    width: 50%;
+}
+
+/* Testimonials */
+.testimonial{
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Cultura */
+#cultura_container{
+    flex-direction: column;
+}
+#cultura_container > #items{
+    width: 90%;
+}
+#cultura_container > #items > .item{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+#cultura_container > #items > .item i{
+    font-size: 2.3rem;
+}
+
+/* Garis */
+#garis_container{
+    flex-direction: column;
+}
+#garis_container > #items{
+    width: 90%;
+}
+#garis_container > #items > .item{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+#garis_container > #items > .item i{
+    font-size: 2.3rem;
+}
+/*Gallerry*/
+#gallerry_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gallerry-image{
+    width: 90%;
+}

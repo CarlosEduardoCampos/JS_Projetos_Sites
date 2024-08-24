@@ -17,7 +17,7 @@ const PROJ_CONTAINER = document.querySelector('.projects_container');
             },
             {
                 'func':'onclick="naoExiste()"',
-                'href':'#',
+                'href':'./sites/Politicapage/index.html',
                 'src':'./img/block.png',
                 'alt':'Projeto em desenvolvomento',
                 'nome':'?????'

@@ -108,12 +108,9 @@ a{
     justify-content: center;
     align-items: center;
     color: var(--fontColor);
-    background: url('../img/showcase.png') no-repeat center center/cover;
+    background: url('../img/showcase_v.png') no-repeat center center/cover;
     /*imagen não sofre efeito do scrow*/
     background-attachment: fixed;
-    /* Overley*/
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: color;
 }
 
 /*cultura*/

@@ -3,24 +3,31 @@ const PROJ_CONTAINER = document.querySelector('.projects_container');
         const PROJ_DATA = [
             {
                 'func':'',
-                'href':'./sites/page/index.html',
+                'href':'./sites/homeEmpresarial/index.html',
                 'src':'./img/site.png',
-                'alt':'Projeto site institucional',
+                'alt':'link home page empresarial',
                 'nome':'Empresarial'
             },
             {
                 'func':'',
-                'href':'./sites/socialPage/index.html',
+                'href':'./sites/homeServicos/index.html',
                 'src':'./img/site.png',
-                'alt':'Projeto site Social Midia',
+                'alt':'link home page contratar serviço',
+                'nome':'Serviço'
+            },
+            {
+                'func':'',
+                'href':'./sites/homeMidia/index.html',
+                'src':'./img/site.png',
+                'alt':'link home page social midia',
                 'nome':'Social'
             },
             {
-                'func':'onclick="naoExiste()"',
-                'href':'./sites/Politicapage/index.html',
-                'src':'./img/block.png',
-                'alt':'Projeto em desenvolvomento',
-                'nome':'?????'
+                'func':'',
+                'href':'./sites/ricardoPiantino/index.html',
+                'src':'./img/site.png',
+                'alt':'link home page candidato politico',
+                'nome':'Política'
             },
         ]
 

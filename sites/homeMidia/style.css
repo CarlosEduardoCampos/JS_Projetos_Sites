@@ -88,30 +88,8 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 1rem;
-}
-
-.nav_contact_card{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.nav_contact_card span{
-    font-size: 2rem;
-    color: var(--primary-color)
-}
-
-.nav_contact_card p{
-    margin-bottom: 5px;
-    font-size: .9rem;
-    font-weight: 600;
-    color: var(--text-light);
-}
-
-.nav_contact_card h4{
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--text-dark);
+    font-size: 0.7rem;
+    display: none;
 }
 
 .header_container{
@@ -196,8 +174,8 @@ nav{
 @media (width > 540px){
     .nav_contact{
         gap: 2rem;
+        font-size: 1rem;
     }
-
     .nav_contact_card{
         gap: 1rem;
     }

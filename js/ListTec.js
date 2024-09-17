@@ -10,8 +10,8 @@ const TEC_CONTAINER = document.querySelector('.tec_container');
                 'nome':'CSS'
             },
             {
-                'url':'javascript.png',
-                'nome':'JavaScript'
+                'url':'php.png',
+                'nome':'PHP'
             },
             {
                 'url':'node.png',

@@ -28,6 +28,12 @@ const PROJ_CONTAINER = document.querySelector('.projects_container');
                 'src':'./img/site.png',
                 'alt':'link home page candidato politico',
                 'nome':'Política'
+            },{
+                'func':'',
+                'href':'./sites/saraMariano/index.html',
+                'src':'./img/site.png',
+                'alt':'link home page candidato politico',
+                'nome':'Temporario'
             },
         ]
 

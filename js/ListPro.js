@@ -35,6 +35,13 @@ const PROJ_CONTAINER = document.querySelector('.projects_container');
                 'alt':'link home page candidato politico',
                 'nome':'Temporario'
             },
+            {
+                'func':'',
+                'href':'./sites/lunetaTv/index.html',
+                'src':'./img/site.png',
+                'alt':'link home page empresa de mackenting',
+                'nome':'Luneta'
+            }
         ]
 
         const listaProjetos = (dados, container) => {

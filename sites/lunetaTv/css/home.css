@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 html {
     scroll-behavior: smooth;
 }
@@ -10,7 +11,7 @@ html {
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Jost", sans-serif;
 }
 a{
     text-decoration: none;
@@ -100,7 +101,6 @@ main nav ol{
 main nav ol li a{
     color: var(--font-ligth);
     font-size: 1.2rem;
-    font-weight: 700;
     width: 500px;
     padding: 10px;
     transition: step-end 0.2s;

@@ -12,6 +12,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: "Jost", sans-serif;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -25,10 +26,17 @@ body{
     overflow-x: hidden;
     background-image: url('../artes/fundo.jpg');
 }
-header .menuPagina{
-    width: 100vw;
+.marginE{
+    padding-left: 60%;
+}
+.marginD{
+    padding-right: 70%;
+}
+.menuPagina{
+    width: 100%;
+    height: 60px;
+    position: fixed;
     background: var(--back-black);
-    position: absolute;
     height: 2rem;
     padding: 20px;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.377);
@@ -37,20 +45,25 @@ header .menuPagina{
     justify-content: space-between;
     align-items: center;
     color: var(--font-ligth);
+    z-index: 1;
 }
-header .menuPagina img{
+.menuPagina .logo{
+    width: 150px;
+    padding-top: 50px;
+}
+.menuPagina img{
     padding-left: 50px;
 }
-header .menuPagina ol{
+.menuPagina ol{
     display: flex;
     flex-direction: row;
     gap: 20px;
     margin: 0 50px;
 }
-header .menuPagina ol li a{
+.menuPagina ol li a{
     padding: 10px;
 }
-header .menuPagina ol li a:hover{
+.menuPagina ol li a:hover{
     background-color: var(--font-ligth);
     border: solid 1px var(--back-ligth);
     color: var(--back-black);
@@ -113,28 +126,49 @@ main nav ol li a:hover{
 }
 .planetas{
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .planetas img{
     cursor: pointer;
+    position: absolute;
+    width: 300px;
 }
-/* Definindo a animação */
-@keyframes balancar {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-} 
+.planetas:hover .bandeira{
+    width: 300px;
+    animation: girar 1s 1;
+}
+.planetas:not(:hover) .bandeira{
+    width: 0;
+}
+.bandeira{
+    width: 0;
+    margin-right: 37px;
+    margin-top: -27px;
+    transition: 1s;
+}
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 /* Aplicando a animação ao elemento */
-.planetas img {
-    display: inline-block;
-    animation: balancar 90s infinite;
+.planetas .pulsar {
+    width: 80px;
+    animation: pulsar 1s infinite;
 }
 #modal{
     display: none;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.377);
     position: fixed;
     top: 0;
@@ -144,7 +178,7 @@ main nav ol li a:hover{
     width: 50px;
     margin: -20px;
     position: absolute;
-    background-color: red;
+    background-color: var(--back-black);
     color: white;
     border: none;
     border-radius: 10px;
@@ -156,7 +190,7 @@ main nav ol li a:hover{
     background-color: var(--font-ligth);
     padding: 20px;
     border-radius: 10px;
-    border: solid 2px var(--back-black);
+    border: solid 2px var(--back-ligth);
 }
 #modal .conteudo h2{
     margin-bottom: 50px;

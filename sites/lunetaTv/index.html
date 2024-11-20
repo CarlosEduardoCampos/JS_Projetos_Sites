@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
+    <nav class="menuPagina">
+        <img class="logo" src="./artes/lunetaLogo02.png" alt="logo Luneta">
+        <ol>
+            <li><a href="">Home</a></li>
+            <li><a href="">Luneta TV</a></li>
+            <li><a href="">Noticias</a></li>
+        </ol>
+    </nav>
     <header>
-        <nav class="menuPagina">
-            <img class="logo" src="" alt="logo Luneta">
-            <ol>
-                <li><a href="">Home</a></li>
-                <li><a href="">Luneta TV</a></li>
-                <li><a href="">Noticias</a></li>
-            </ol>
-        </nav>
         <div class="cabecalho">
             <div>
                 <img src="./artes/lunetaLogo01.png" alt="Logo Luneta">
@@ -33,51 +33,41 @@
     <main>
         <nav class="menuConteudo">
             <ol>
-                <li><a href="#Mercurio">MERCÚRIO</a></li>
-                <li><a href="#Venus">VÊNUS</a></li>
                 <li><a href="#Terra">TERRA</a></li>
-                <li><a href="#Marte">MARTE</a></li>
-                <li><a href="#Jupiter">JUPITER</a></li>
+                <li><a href="#Lua">LUA</a></li>
                 <li><a href="#Saturno">SATURNO</a></li>
-                <li><a href="#Urano">URANO</a></li>
-                <li><a href="#Netuno">NETUNO</a></li>
+                <li><a href="#Marte">Marte</a></li>
             </ol>
         </nav>
 
         <div id="modal">
         </div>
 
-        <div id="Mercurio" class="planetas" onclick="modal(1)">
-            <img src="./artes/mercurio.png" alt="Planeta Mercúrio">
-        </div>
-
-        <div id="Venus" class="planetas" onclick="modal(1)">
-            <img src="./artes/venus.png" alt="Planeta Vênus">
-        </div>
-
-        <div id="Terra" class="planetas" onclick="modal(1)">
+        <div id="Terra" class="planetas marginE" onclick="modal(1)">
             <img src="./artes/terra.png" alt="Planeta Terra">
+            <img src="./artes/ponto.png" class="pulsar">
+            <img src="./artes/bandeiraTerra.png" id="bandeiraTerra" class="bandeira">
         </div>
 
-        <div id="Marte" class="planetas" onclick="modal(1)">
-            <img src="./artes/marte.png" alt="Planeta Marte">
+        <div id="Lua" class="planetas" onclick="modal(1)">
+            <img src="./artes/lua.png" alt="Lua">
+            <img src="./artes/ponto.png" class="pulsar">
+            <img src="./artes/bandeiraLua.png" id="bandeiraTerra" class="bandeira">
         </div>
 
-        <div id="Jupiter" class="planetas" onclick="modal(1)">
-            <img src="./artes/jupiter.png" alt="Planeta Jupiter">
-        </div>
-
-        <div id="Saturno" class="planetas" onclick="modal(1)">
+        <div id="Saturno" class="planetas marginD" onclick="modal(1)">
             <img src="./artes/saturno.png" alt="Planeta Saturno">
+            <img src="./artes/ponto.png" class="pulsar">
+            <img src="./artes/bandeiraSaturno.png" id="bandeiraTerra" class="bandeira">
         </div>
 
-        <div id="Urano" class="planetas" onclick="modal(1)">
-            <img src="./artes/urano.png" alt="Planeta Urano">
+        <div id="Marte" class="planetas marginE" onclick="modal(1)">
+            <img src="./artes/marte.png" alt="Planeta Marte">
+            <img src="./artes/ponto.png" class="pulsar">
+            <img src="./artes/bandeiraMarte.png" id="bandeiraTerra" class="bandeira">
         </div>
-
-        <div id="Netuno" class="planetas" onclick="modal(1)">
-            <img src="./artes/netuno.png" alt="Planeta Netuno">
-        </div>
+        
+        
     </main>
 </body>
 <script src="./js/modal.js"></script>

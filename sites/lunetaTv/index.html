@@ -5,15 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUNETA</title>
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav class="menuPagina">
-        <img class="logo" src="./artes/lunetaLogo02.png" alt="logo Luneta">
-        <ol>
-            <li><a href="">Home</a></li>
-            <li><a href="">Luneta TV</a></li>
-            <li><a href="">Noticias</a></li>
-        </ol>
+        <div>
+            <div class="logo hidden" id="logo_menu">
+                <img src="./artes/lunetaLogo01.png" alt="logo Luneta">
+            </div>
+        </div>
+
+        <div id="social">
+            <ul>
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-twitter-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div>
+            <ol id="lista_nav" class="visible">
+                <li><a href="">Home</a></li>
+                <li><a href="">Luneta TV</a></li>
+                <li><a href="">Noticias</a></li>
+            </ol>
+            <i class="fa fa-list-ul" id="burguer_menu" onclick="burguer_menu()"></i>
+        </div>
+
     </nav>
     <header>
         <div class="cabecalho">
@@ -43,32 +76,77 @@
         <div id="modal">
         </div>
 
-        <div id="Terra" class="planetas marginE" onclick="modal(1)">
-            <img src="./artes/terra.png" alt="Planeta Terra">
-            <img src="./artes/ponto.png" class="pulsar">
-            <img src="./artes/bandeiraTerra.png" id="bandeiraTerra" class="bandeira">
-        </div>
+        <section id="universo">
+            <div class="gravidade">
+                <div id="Saturno" class="planetas marginD" onclick="modal(1)">
+                    <img src="./artes/bandeiraSaturno.png" id="bandeiraTerra" class="bandeira cordenada01">
+                    <img src="./artes/saturno.png" alt="Planeta Saturno">
+                </div>
+            </div>
 
-        <div id="Lua" class="planetas" onclick="modal(1)">
-            <img src="./artes/lua.png" alt="Lua">
-            <img src="./artes/ponto.png" class="pulsar">
-            <img src="./artes/bandeiraLua.png" id="bandeiraTerra" class="bandeira">
-        </div>
+            <div class="gravidade">
+                <div id="Marte" class="planetas marginE" onclick="modal(1)">
+                    <img src="./artes/bandeiraMarte.png" id="bandeiraTerra" class="bandeira cordenada02">
+                    <img src="./artes/marte.png" alt="Planeta Marte">
+                </div> 
+            </div>
+    
+            <div class="gravidade">
+                <div id="Lua" class="planetas" onclick="modal(1)">
+                    <img src="./artes/bandeiraLua.png" id="bandeiraTerra" class="bandeira cordenada03">
+                    <img src="./artes/lua.png" alt="Lua">
+                </div>
+            </div>
 
-        <div id="Saturno" class="planetas marginD" onclick="modal(1)">
-            <img src="./artes/saturno.png" alt="Planeta Saturno">
-            <img src="./artes/ponto.png" class="pulsar">
-            <img src="./artes/bandeiraSaturno.png" id="bandeiraTerra" class="bandeira">
-        </div>
-
-        <div id="Marte" class="planetas marginE" onclick="modal(1)">
-            <img src="./artes/marte.png" alt="Planeta Marte">
-            <img src="./artes/ponto.png" class="pulsar">
-            <img src="./artes/bandeiraMarte.png" id="bandeiraTerra" class="bandeira">
-        </div>
-        
-        
+            <div class="gravidade">
+                <div id="Terra" class="planetas marginE" onclick="modal(1)">
+                    <img src="./artes/bandeiraTerra.png" id="bandeiraTerra" class="bandeira cordenada04">
+                    <img src="./artes/terra.png" alt="Planeta Terra">
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5511999999999" class="WhatsBtn">
+        <img src="./artes/whast.png" alt="WhatsApp" style="width:80px;height:80px;">
+    </a>
+
+    <footer>
+        
+    </footer>
 </body>
 <script src="./js/modal.js"></script>
+<script>
+    window.addEventListener('scroll', function() {
+        var scrollText = document.getElementById('logo_menu');
+        if (window.scrollY > 450) { // Ajuste o valor conforme necessário
+            scrollText.classList.remove('hidden');
+            scrollText.classList.add('visible');
+        } else {
+            scrollText.classList.remove('visible');
+            scrollText.classList.add('hidden');
+        }
+    });
+
+    function verificarClasse(elemento, classe) {
+        return elemento.classList.contains(classe);
+        
+    }
+
+    function burguer_menu() {
+        const elemento = document.getElementById('lista_nav');
+        const classe = 'hidden'; // Classe a ser verificada
+
+
+        if (verificarClasse(elemento, classe)) { // Ajuste o valor conforme necessário
+            
+            elemento.classList.remove('hidden');
+            elemento.classList.add('visible');
+        }
+        else {
+            elemento.classList.remove('visible');
+            elemento.classList.add('hidden');
+        }
+    }
+</script>
 </html>

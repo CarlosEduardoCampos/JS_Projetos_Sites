@@ -1,0 +1,61 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');*/
+
+@font-face {
+    font-family: 'Agrandir';
+    src:
+    url('../fonts/Agrandir-WideBlackItalic.otf') format('opentype'),
+    /* --> Não pode ter varias fontes ao mesmo tempo porque ele buga, sem saber qual delas ele vai usar.
+
+    url('../fonts/Agrandir-GrandLight.otf') format('opentype'),
+    url('../fonts/Agrandir-Narrow.otf') format('opentype'),
+    url('../fonts/Agrandir-GrandHeavy.otf') format('opentype'),
+    url('../fonts/Agrandir-TextBold.otf') format('opentype'),
+    url('../fonts/Agrandir-ThinItalic.otf') format('opentype'),
+    url('../fonts/Agrandir-WideBlackItalic.otf') format('opentype'),
+    url('../fonts/Agrandir-WideLight.otf') format('opentype');
+    url('../fonts/Agrandir-Regular.otf') format('opentype')
+    font-weight: normal;
+    font-style: normal;
+    */
+    /*
+    Tipos de format()
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-att (Apple Advanced Typography)
+    - svg
+*/
+}
+html {
+    scroll-behavior: smooth;
+    
+}
+:root{
+    --font-ligth:#f5f5f5;
+    --font-black:#000;
+    --back-ligth:#00be7f;
+    --back-black:#0b6fa5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Agrandir", sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: var(--font-ligth);
+}
+ol, ul{
+    list-style: none;
+}
+body{
+    overflow-x: hidden;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    display: flex;
+    animation: slideUp 1s ease-out;
+}

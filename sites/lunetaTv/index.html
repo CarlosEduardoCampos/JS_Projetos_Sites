@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUNETA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/config.css">
+    <link rel="stylesheet" href="./css/anima.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
     <nav class="menuPagina">
@@ -15,65 +19,33 @@
                 <img src="./artes/lunetaLogo01.png" alt="logo Luneta">
             </div>
         </div>
-
-        <div id="social">
-            <ul>
-                <li>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                </li>
-    
-                <li>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <i class="fa fa-facebook-square"></i>
-                    </a>
-                </li>
-    
-                <li>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <i class="fa fa-twitter-square"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        
-        <div>
-            <ol id="lista_nav" class="visible">
-                <li><a href="">Home</a></li>
-                <li><a href="">Luneta TV</a></li>
-                <li><a href="">Noticias</a></li>
-            </ol>
-            <i class="fa fa-list-ul" id="burguer_menu" onclick="burguer_menu()"></i>
-        </div>
-
     </nav>
     <header>
         <div class="cabecalho">
             <div>
-                <img src="./artes/lunetaLogo01.png" alt="Logo Luneta">
+                <img src="./artes/lunetaLogo01.png" alt="Logo Luneta" class="direita">
             </div>
             <div>
-                <h1>
-                    Lorem ipsum dolor sit amet
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dignissimos, ad delectus illo inventore excepturi expedita similique dicta quos quam placeat maiores natus distinctio est nostrum eaque temporibus dolorem animi!
-                </p>
+                <img src="./artes/apresentacao.png" alt="NASCIDA E CRIADA NA UEMG(UNIVERSIDADE DO ESTADO DE MINAS GERAIS), SOMOS A 1ª AGÊNCIA DE PUBLICIDADE, PROPAGANDA E MARKENTING BASEADA EM ECONOMIA SOLIDÁRIA" class="esquerda">
             </div>
         </div>
     </header>
     <main>
         <nav class="menuConteudo">
             <ol>
-                <li><a href="#Terra">TERRA</a></li>
-                <li><a href="#Lua">LUA</a></li>
                 <li><a href="#Saturno">SATURNO</a></li>
-                <li><a href="#Marte">Marte</a></li>
+                <li><a href="#Marte">MARTE</a></li>
+                <li><a href="#Lua">LUA</a></li>
+                <li><a href="#Terra">TERRA</a></li>
+                <li><a href="#"><img src="./artes/lunetaTV_logo.png" alt="logo luneta tv"></a></li>
             </ol>
         </nav>
 
         <div id="modal">
+        </div>
+
+        <div class="marquee-container">
+            <div class="marquee">Este é um texto rolante que começa na direita e some na esquerda.</div>
         </div>
 
         <section id="universo">
@@ -94,14 +66,14 @@
             <div class="gravidade">
                 <div id="Lua" class="planetas" onclick="modal(1)">
                     <img src="./artes/bandeiraLua.png" id="bandeiraTerra" class="bandeira cordenada03">
-                    <img src="./artes/lua.png" alt="Lua">
+                    <img src="./artes/lua.png" alt="Lua" style="width: 300px;">
                 </div>
             </div>
 
             <div class="gravidade">
                 <div id="Terra" class="planetas marginE" onclick="modal(1)">
                     <img src="./artes/bandeiraTerra.png" id="bandeiraTerra" class="bandeira cordenada04">
-                    <img src="./artes/terra.png" alt="Planeta Terra">
+                    <img src="./artes/terra.png" alt="Planeta Terra" style="width: 500px;">
                 </div>
             </div>
         </section>
@@ -112,41 +84,24 @@
     </a>
 
     <footer>
-        
+        <div id="social">
+            <ul>
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </div> 
     </footer>
 </body>
 <script src="./js/modal.js"></script>
-<script>
-    window.addEventListener('scroll', function() {
-        var scrollText = document.getElementById('logo_menu');
-        if (window.scrollY > 450) { // Ajuste o valor conforme necessário
-            scrollText.classList.remove('hidden');
-            scrollText.classList.add('visible');
-        } else {
-            scrollText.classList.remove('visible');
-            scrollText.classList.add('hidden');
-        }
-    });
-
-    function verificarClasse(elemento, classe) {
-        return elemento.classList.contains(classe);
-        
-    }
-
-    function burguer_menu() {
-        const elemento = document.getElementById('lista_nav');
-        const classe = 'hidden'; // Classe a ser verificada
-
-
-        if (verificarClasse(elemento, classe)) { // Ajuste o valor conforme necessário
-            
-            elemento.classList.remove('hidden');
-            elemento.classList.add('visible');
-        }
-        else {
-            elemento.classList.remove('visible');
-            elemento.classList.add('hidden');
-        }
-    }
-</script>
+<script src="./js/logo_scroll.js"></script>
+<script src="./js/menu_burguer.js"></script>
 </html>

@@ -1,0 +1,10 @@
+window.addEventListener('scroll', function() {
+    var scrollText = document.getElementById('logo_menu');
+    if (window.scrollY > 450) { // Ajuste o valor conforme necessário
+        scrollText.classList.remove('hidden');
+        scrollText.classList.add('visible');
+    } else {
+        scrollText.classList.remove('visible');
+        scrollText.classList.add('hidden');
+    }
+});

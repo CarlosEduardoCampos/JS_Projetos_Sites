@@ -1,12 +1,18 @@
 .logo{
     position: fixed;
-    top: 0;
+    top: 5;
     text-align: center;
     width: 100px;
     z-index: 1;
 }
 .logo img{
     width: 100px;
+}
+header{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 400px;
 }
 .cabecalho{
     width: 100vw;
@@ -61,7 +67,6 @@ main nav ol li a img{
     padding: 5px;
     background-color: var(--back-ligth);
 }
-
 .marquee span {
     display: inline-block;
     animation: marquee 30s linear infinite;
@@ -69,7 +74,6 @@ main nav ol li a img{
     color: var(--font-ligth);
     text-shadow: 1px 1px 2px #000;
 }
-
 #universo{
     width: 100%;
     display: flex;

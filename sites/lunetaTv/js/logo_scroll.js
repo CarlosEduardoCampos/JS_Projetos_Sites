@@ -1,6 +1,6 @@
 window.addEventListener('scroll', function() {
     var scrollText = document.getElementById('logo_menu');
-    if (window.scrollY > 280) { // Ajuste o valor conforme necessário
+    if (window.scrollY > 180) { // Ajuste o valor conforme necessário
         scrollText.classList.remove('hidden');
         scrollText.classList.add('visible');
     } else {

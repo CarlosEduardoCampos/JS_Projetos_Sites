@@ -8,3 +8,8 @@ footer{
     align-items: center;
     font-size: 1.5rem;
 }
+#social ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}

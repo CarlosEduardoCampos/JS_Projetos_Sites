@@ -33,7 +33,6 @@ button:hover{
 #modal .conteudo h2{
     margin-bottom: 50px;
     color: var(--back-ligth);
-    white-space: nowrap;
     overflow: hidden;
 }
 

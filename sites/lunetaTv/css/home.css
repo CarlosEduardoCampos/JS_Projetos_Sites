@@ -10,7 +10,7 @@
 }
 .cabecalho{
     width: 100vw;
-    height: 70vh;
+    height: 40vh;
     background-color: var(--font-ligth);
     display: flex;
     justify-content: baseline;
@@ -26,13 +26,6 @@
 .cabecalho .esquerda{
     width: 90%;
     margin-left: -200px;
-}
-.cabecalho h1{
-    margin-bottom: 50px;
-    color: var(--back-ligth);
-}
-.cabecalho p{
-    text-align: justify;
 }
 main{
     width: 100vw;
@@ -57,7 +50,9 @@ main nav ol li a{
     font-size: 1.2rem;
     align-items: center;
 }
-
+main nav ol li a img{
+    width: 70px;
+}
 .marquee {
     width: 100%;
     overflow: hidden;
@@ -145,26 +140,36 @@ main nav ol li a{
 
 
 @media (max-width: 800px) {
-    .menuPagina #burguer_menu{
-        display: flex;
-        font-size: 0.2rem;
-        cursor: pointer;
-        z-index: 0;
+    header{
+        height: 120px;
     }
     .cabecalho{
-        height: 5vh;
-        padding: 100px;
-    }
-    .cabecalho .direita{
+        height: 100%;
         width: 100%;
-        margin-left: -100px;
     }
     .cabecalho .esquerda{
         margin-top: 10px;
-        width: 180%;
+        width: 100%;
         margin-left: -50px;
     }
+    main nav{
+       height: 25px;
+    }
     main nav ol li a{
-        font-size: 1rem;
+        font-size: 0.7rem;
+    }
+    main nav ol li a img{
+        width: 40px;
+    }
+    .marquee span {
+        font-size: 0.7rem;
+    }
+    #universo{ 
+        padding: 100px;
+        gap: 100px;
+    }
+    .planetas img{
+        cursor: pointer;
+        width: 300px;
     }
 }

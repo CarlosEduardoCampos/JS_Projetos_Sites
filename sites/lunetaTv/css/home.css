@@ -1,3 +1,14 @@
+.logo{
+    position: fixed;
+    top: 0;
+    left: 50px;
+    text-align: center;
+    width: 100px;
+    z-index: 1;
+}
+.logo img{
+    width: 100px;
+}
 .cabecalho{
     width: 100vw;
     height: 70vh;
@@ -28,44 +39,43 @@ main{
     width: 100vw;
 }
 main nav{
-    width: 100vw;
+    width: 100%;
     height: 60px;
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--back-black);
 }
 main nav ol{
+    border: 1px #000;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100vw;
+    align-items: center;
 }
 main nav ol li a{
-    width: 500px;
-    padding: 10px;
     color: var(--font-ligth);
     font-size: 1.2rem;
-}
-main nav ol li a:hover{
-    background-color: var(--font-ligth);
-    border: solid 1px var(--back-ligth);
-    color: var(--back-black);
-    border-radius: 5px;
-}
-.marquee-container {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
+    align-items: center;
 }
 
 .marquee {
-    display: inline-block;
-    position: absolute;
-    will-change: transform;
-    animation: marquee 10s linear infinite;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: var(--back-ligth);
 }
+
+.marquee span {
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+    margin-right: 20px;
+    color: var(--font-ligth);
+    text-shadow: 1px 1px 2px #000;
+}
+
 #universo{
     width: 100%;
     display: flex;
@@ -156,6 +166,6 @@ main nav ol li a:hover{
         margin-left: -50px;
     }
     main nav ol li a{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }

@@ -1,7 +1,6 @@
 .logo{
     position: fixed;
     top: 0;
-    left: 50px;
     text-align: center;
     width: 100px;
     z-index: 1;
@@ -148,12 +147,12 @@ main nav ol li a{
 @media (max-width: 800px) {
     .menuPagina #burguer_menu{
         display: flex;
-        font-size: 1.5rem;
+        font-size: 0.2rem;
         cursor: pointer;
         z-index: 0;
     }
     .cabecalho{
-        height: 20vh;
+        height: 5vh;
         padding: 100px;
     }
     .cabecalho .direita{

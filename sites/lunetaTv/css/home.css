@@ -1,12 +1,12 @@
 .logo{
     position: fixed;
-    top: 5;
+    top: 0px;
     text-align: center;
     width: 100px;
     z-index: 1;
 }
 .logo img{
-    width: 100px;
+    width: 150px;
 }
 header{
     display: flex;
@@ -17,7 +17,6 @@ header{
 .cabecalho{
     width: 100vw;
     height: 40vh;
-    background-color: var(--font-ligth);
     display: flex;
     justify-content: baseline;
     align-items: center;
@@ -39,13 +38,12 @@ main{
 main nav{
     width: 100%;
     height: 60px;
-    padding: 20px;
-    display: flex;
+    display: block;
     background-color: var(--back-black);
 }
 main nav ol{
-    border: 1px #000;
     width: 100vw;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -54,17 +52,23 @@ main nav ol{
 main nav ol li a{
     color: var(--font-ligth);
     font-size: 1.2rem;
+    justify-items: center;
     align-items: center;
 }
 main nav ol li a img{
-    width: 70px;
+    width: 60px;
+    margin-top: 7px;
 }
 .marquee {
+    position: fixed;
+    top: 5px;
+    align-items: center;
+    justify-items: center;
+    padding-top: 5px;
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    padding: 5px;
     background-color: var(--back-ligth);
 }
 .marquee span {
@@ -72,16 +76,18 @@ main nav ol li a img{
     animation: marquee 30s linear infinite;
     margin-right: 20px;
     color: var(--font-ligth);
-    text-shadow: 1px 1px 2px #000;
 }
 #universo{
+
+    background-image: url('../artes/fundo.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background: #000;
-    /*background-image: url("../artes/fundo.jpg") no-repeat center center fixed;*/
     padding: 200px;
     gap: 200px;
 }
@@ -144,10 +150,14 @@ main nav ol li a img{
 
 
 @media (max-width: 800px) {
+    .logo img{
+        width: 100px;
+    }
     header{
-        height: 120px;
+        height: 150px;
     }
     .cabecalho{
+        margin-top: 30px;
         height: 100%;
         width: 100%;
     }
@@ -157,13 +167,17 @@ main nav ol li a img{
         margin-left: -50px;
     }
     main nav{
-       height: 25px;
+       height: 30px;
     }
     main nav ol li a{
         font-size: 0.7rem;
     }
     main nav ol li a img{
         width: 40px;
+        margin-top: 6px;
+    }
+    .marquee{
+        padding-top: 2px;
     }
     .marquee span {
         font-size: 0.7rem;

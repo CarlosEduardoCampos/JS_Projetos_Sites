@@ -1,5 +1,5 @@
 window.addEventListener('scroll', function() {
-    var scrollText = document.getElementById('logo_menu');
+    let scrollText = document.getElementById('logo_menu');
     if (window.scrollY > 180) { // Ajuste o valor conforme necessário
         scrollText.classList.remove('hidden');
         scrollText.classList.add('visible');
@@ -8,3 +8,15 @@ window.addEventListener('scroll', function() {
         scrollText.classList.add('hidden');
     }
 });
+/*
+window.addEventListener('scroll', function() {
+    let scrollText = document.getElementsById('marquee_home');
+    if (window.scrollY > 180) { // Ajuste o valor conforme necessário
+        scrollText.classList.remove('hidden');
+        scrollText.classList.add('visible');
+    } else {
+        scrollText.classList.remove('visible');
+        scrollText.classList.add('hidden');
+    }
+});
+*/

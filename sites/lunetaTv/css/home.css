@@ -123,8 +123,8 @@ main nav ol li a img{
     position: absolute;
 }
 .cordenada01{
-    margin-left: -100px;
-    margin-top: -150px;
+    margin-left: 150px;
+    margin-top: -80px;
 }
 .cordenada02{
     margin-top: -130px;
@@ -156,20 +156,23 @@ main nav ol li a img{
         width: 100px;
     }
     header{
-        height: 150px;
+        height: 140px;
     }
     .cabecalho{
-        margin-top: 30px;
         height: 100%;
         width: 100%;
     }
+    .cabecalho .direita{
+        margin-top: -20px;
+        width: 70%;
+        margin-left: -80px;
+    }
     .cabecalho .esquerda{
-        margin-top: 10px;
-        width: 100%;
-        margin-left: -50px;
+        width: 130%;
+        margin-left: -100px;
     }
     main nav{
-       height: 30px;
+       height: 45px;
     }
     main nav ol li a{
         font-size: 0.7rem;

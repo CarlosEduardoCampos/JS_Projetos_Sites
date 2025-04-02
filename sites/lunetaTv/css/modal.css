@@ -33,8 +33,8 @@
     margin: auto;
     border: solid 2px #fff;
 }
-#modal .conteudo div .white{
-    padding-top: 20px;
+#modal .conteudo .white{
+    padding-top: 0 20px;
     width: 0;
     font-family: 'AgrandirNarrow', sans-serif;
     font-size: 18px;
@@ -43,7 +43,7 @@
     height: 100%;
     background-color: #fff;
     animation-name: slideRight;
-    animation-duration: 3s;
+    animation-duration: 6s;
     animation-fill-mode: forwards;
 }
 #modal .faixa{
@@ -69,16 +69,11 @@
 #modal button img{
     width: 10px;
 }
-#modal .conteudo h2{
-    margin-bottom: 50px;
-    color: var(--back-ligth);
-    overflow: hidden;
-}
 #modal .conteudo p{
     overflow: hidden;
     white-space: pre-wrap;
     text-align: left;
-    padding: 10px 20px;
+    padding: 30px 0px 20px 20px;
 }
 #modal .conteudo .blue{
     color: #0b6fa5;
@@ -90,15 +85,57 @@
     font-family: 'AgrandirBold', sans-serif;
 }
 @media (max-width: 1030px) {
-    
-    #modal .conteudo{
-        flex-direction: column-reverse;
-        width: 80%;
-        height: 80%;
+    .fundoSaturno{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-image: url('../artes/fundo_mobile_saturno.png');
+        background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita que a imagem se repita */
     }
-    #modal .conteudo div{
+    .fundoMarte{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-image: url('../artes/fundo_mobile_marte.png');
+        background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita que a imagem se repita */
+    }
+    .fundoLua{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-image: url('../artes/fundo_mobile_lua.png');
+        background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita que a imagem se repita */
+    }
+    #modal .conteudo{
+        flex-direction: column;
+        width: 80%;
+        height: 90%;
+        animation: none;
+    }
+    #modal div{
         width: 100%;
         height: 100%;
+    }
+    #modal .conteudo p{
+        overflow: hidden;
+        white-space: pre-wrap;
+        text-align: left;
+        padding: 50px 20px 0px 20px;
+    }
+    #modal .conteudo .white
+    {
+        width: 100%;
+        height: 60%;
+        font-size: 12px;
+        animation-name: slideUp;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
     }
     #modal .faixa{
         display: none;

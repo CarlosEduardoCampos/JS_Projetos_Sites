@@ -2,21 +2,20 @@
 const CONTEUDO_PLANETAS = [
   {
     'id': 1,
-    'titulo': 'Lorem ipsum dolor sit amet consectetur',
-    'texto': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita non, maxime, cupiditate doloribus atque voluptates sint quisquam fugiat reprehenderit nulla aperiam quaerat magni perferendis iste cumque similique? Sequi, quisquam eveniet!'
+    'tag': 'tagSaturno.png',
+    'texto': 
+    `Saturno é o segundo maior planeta do nosso sitema solar e carrega seu anel icônico feito de gelo e poeira.\n\nO gigante gasoso e tempestuoso foi o escolhido pela Luneta para representar o setor de Markenting e Comunicação para <span>empresas públicas ou projetos advindos de recursos públicos</span>, pois uma responsa dessas requer <span>disciplina , estrutura, responsabilidade e limites</span>, que é justamente o que o planeta representa\n\nApessar das tempestades terríveis, a visita foi agradável.`,
+    'fundo': 'fundoSaturno'
   }
 ];
 
 const modal = (numID = 0) => {
 
   // Seleciona o elemento:
-  let container = document.getElementById('modal');
+  const container = document.getElementById('modal');
 
   // Modifica a visualização mundando a classe:
   container.style.display = (container.style.display === 'flex') ? 'none' : 'flex';
-
-  let h2;
-  let h2_txt;
 
   let p;
   let p_txt;
@@ -30,43 +29,36 @@ const modal = (numID = 0) => {
       // Preenche o conteudo comforme o elemente que foi selecionado:
       if (planeta.id == numID)
       {
+        //conteudo.style.backgroundImage = "url('"+ planeta.fundo +"')";
+
         container.innerHTML += `
           <div class="conteudo">
-              <button onclick="modal()">X</button>
-              <h2></h2>
+            <button onclick="modal()">X</button>
+            <div class=" ${planeta.fundo}">
+              <img src="./artes/${planeta.tag}" alt="Faixa escrito saturno" class="faixa">
+            </div>
+            <div class="white">
+              <img src="./artes/${planeta.tag}" alt="Faixa escrito saturno" class="faixap">
               <p></p>
+            </div>
           </div>
         `;
 
-        // Seleciona a tag que recebera o titulo:
-        let h2 = container.querySelector('h2');
-        let h2_txt = planeta.titulo;
-
         // Seleciona a tag que recebera o texto:
-        let p = container.querySelector('p');
-        let p_txt = planeta.texto;
+        p = container.querySelector('p');
+        p_txt = planeta.texto;
 
-        // Cria o efeito de digitação dos conteudos:
-        let i = 0;
-        function digitar0() {
-          if (i < h2_txt.length) {
-            h2.textContent += h2_txt.charAt(i);
-            i++;
-            setTimeout(digitar0, 100); // Ajuste o tempo de digitação aqui (em milissegundos)
-          }
-        }
-        digitar0();
-
+        let html = '';
         let j = 0
         function digitar1() {
           if (j < p_txt.length) {
-            p.textContent += p_txt.charAt(j);
+            html += p_txt.charAt(j)
+            p.innerHTML = html;
             j++;
             setTimeout(digitar1, 100); // Ajuste o tempo de digitação aqui (em milissegundos)
           }
         }
         digitar1();
-
       }
     });
   }

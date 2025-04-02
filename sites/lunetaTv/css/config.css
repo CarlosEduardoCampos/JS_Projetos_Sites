@@ -26,6 +26,32 @@
     - svg
 */
 }
+@font-face {
+    font-family: 'Agrandir';
+    src:
+    url('../fonts/Agrandir-TextBold.otf') format('opentype'),
+    /* --> Não pode ter varias fontes ao mesmo tempo porque ele buga, sem saber qual delas ele vai usar.
+
+    url('../fonts/Agrandir-GrandLight.otf') format('opentype'),
+    url('../fonts/Agrandir-Narrow.otf') format('opentype'),
+    url('../fonts/Agrandir-GrandHeavy.otf') format('opentype'),
+    url('../fonts/Agrandir-TextBold.otf') format('opentype'),
+    url('../fonts/Agrandir-ThinItalic.otf') format('opentype'),
+    url('../fonts/Agrandir-WideBlackItalic.otf') format('opentype'),
+    url('../fonts/Agrandir-WideLight.otf') format('opentype');
+    url('../fonts/Agrandir-Regular.otf') format('opentype')
+    font-weight: normal;
+    font-style: normal;
+    */
+    /*
+    Tipos de format()
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-att (Apple Advanced Typography)
+    - svg
+*/
+}
 html {
     scroll-behavior: smooth;
     

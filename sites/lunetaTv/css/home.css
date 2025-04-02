@@ -96,7 +96,10 @@ main nav ol li a img{
     width: 100vw;
     height: 500px;
     height: auto;
+    justify-items: center;
+    justify-content: center;
 }
+/*
 .marginE{
     display: flex;
     flex-direction: row-reverse;
@@ -104,7 +107,7 @@ main nav ol li a img{
 .marginD{
     display: flex;
     flex-direction: row;
-}
+}*/
 .planetas img{
     cursor: pointer;
     width: 400px;
@@ -122,7 +125,7 @@ main nav ol li a img{
 }
 .cordenada01{
     margin-left: 100px;
-    margin-top: -20px;
+    margin-top: -100px;
 }
 .cordenada02{
     margin-right: 140px;
@@ -134,20 +137,20 @@ main nav ol li a img{
 }
 .cordenada04{
     margin-right: 160px;
-    margin-top: -100px;
+    margin-top: -140px;
 }
 .WhatsBtn{
     position:fixed;
-    width: 80px;
-    height: 80px;
-    bottom:20px;
-    right:20px;
-    padding:15px;
+    bottom:0;
+    right:0;
     border-radius: 50%;
-    box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+    border: 1px greenyellow;
     margin: 30px;
+    animation: pulsar 1.5s infinite;
 }
-
+.WhatsBtn img{
+    max-width: 60px;
+}
 
 @media (max-width: 800px) {
     .logo img{

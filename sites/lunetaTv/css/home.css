@@ -9,6 +9,7 @@
     width: 150px;
 }
 header{
+    margin-top: 50px;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -26,20 +27,24 @@ header{
     text-align: center;
 }
 .cabecalho .direita{
+    margin-top: -30px;
     width: 70%;
+    margin-left: -200px;
 }
 .cabecalho .esquerda{
-    width: 90%;
-    margin-left: -200px;
+    width: 130%;
+    margin-left: -220px;
 }
 main{
     width: 100vw;
 }
 main nav{
+    margin-top: 0px;
     width: 100%;
     height: 60px;
     display: block;
     background-color: var(--back-black);
+    font-family: "Agrandir", sans-serif;
 }
 main nav ol{
     width: 100vw;
@@ -62,6 +67,7 @@ main nav ol li a img{
 .marquee {
     position: fixed;
     top: 5px;
+    font-family: "Agrandir", sans-serif;
     align-items: center;
     justify-items: center;
     padding-top: 5px;
@@ -78,11 +84,7 @@ main nav ol li a img{
     color: var(--font-ligth);
 }
 #universo{
-
-    background-image: url('../artes/fundo.jpg');
-    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-color: #000;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -99,22 +101,19 @@ main nav ol li a img{
     justify-items: center;
     justify-content: center;
 }
-/*
 .marginE{
-    display: flex;
-    flex-direction: row-reverse;
+    margin-right: -200px;
 }
 .marginD{
-    display: flex;
-    flex-direction: row;
-}*/
+    margin-right: 200px;
+}
 .planetas img{
     cursor: pointer;
     width: 400px;
 
 }
 .planetas:hover .bandeira{
-    width: 300px;
+    width: 400px;
     animation: up 1s ease-out;
 }
 .planetas:not(:hover) .bandeira{
@@ -124,20 +123,20 @@ main nav ol li a img{
     position: absolute;
 }
 .cordenada01{
-    margin-left: 100px;
-    margin-top: -100px;
+    margin-left: -100px;
+    margin-top: -150px;
 }
 .cordenada02{
-    margin-right: 140px;
-    margin-top: -40px;
+    margin-top: -130px;
+    margin-left: -100px;
 }
 .cordenada03{
-    margin-left: -20px;
-    margin-top: -90px;
+    margin-left: 50px;
+    margin-top: -100px;
 }
 .cordenada04{
-    margin-right: 160px;
-    margin-top: -140px;
+    margin-top: -200px;
+    margin-left: -120px;
 }
 .WhatsBtn{
     position:fixed;

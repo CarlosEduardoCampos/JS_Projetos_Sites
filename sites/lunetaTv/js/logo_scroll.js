@@ -9,15 +9,3 @@ window.addEventListener('scroll', function() {
         scrollText.classList.add('hidden');
     }
 });
-
-window.addEventListener('scroll', function() {
-    let scrollText = document.getElementById('marquee_home');
-
-    if (window.scrollY > 180) { // Ajuste o valor conforme necessário
-        scrollText.classList.remove('hidden');
-        scrollText.classList.add('visible');
-    } else {
-        scrollText.classList.remove('visible');
-        scrollText.classList.add('hidden');
-    }
-});

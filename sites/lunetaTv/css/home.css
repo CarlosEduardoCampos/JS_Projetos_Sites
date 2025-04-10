@@ -33,7 +33,7 @@ header{
 }
 .cabecalho .esquerda{
     width: 130%;
-    margin-left: -220px;
+    margin-left: -250px;
 }
 main{
     width: 100vw;
@@ -123,8 +123,8 @@ main nav ol li a img{
     position: absolute;
 }
 .cordenada01{
-    margin-left: 150px;
-    margin-top: -80px;
+    margin-left: -150px;
+    margin-top: -200px;
 }
 .cordenada02{
     margin-top: -130px;

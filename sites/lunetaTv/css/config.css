@@ -49,15 +49,15 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 a{
     text-decoration: none;
     color: var(--font-ligth);
 }
 ol, ul{
     list-style: none;
-}
-body{
-    overflow-x: hidden;
 }
 .hidden {
     display: none;

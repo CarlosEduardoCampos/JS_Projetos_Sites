@@ -1,6 +1,7 @@
 const PROJ_CONTAINER = document.querySelector('.projects_container');
 
     const PROJ_DATA = [
+        /*
         {
             'func':'',
             'href':'./sites/ricardoPiantino/index.html',
@@ -13,7 +14,7 @@ const PROJ_CONTAINER = document.querySelector('.projects_container');
             'src':'./img/site.png',
             'alt':'link home page candidato politico',
             'nome':'Política-01'
-        },
+        },*/
         {
             'func':'',
             'href':'./sites/lunetaTv/index.html',

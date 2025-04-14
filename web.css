@@ -20,9 +20,10 @@ a{
     text-decoration: none;
     color: inherit;
 }
+/*
 #left{
     float: left;
-    display: flex;
+    display: none;
     flex-direction: column;
     position: fixed;
     text-align: center;
@@ -55,10 +56,11 @@ a{
 }
 #left > ul > li > i{
     margin-right: 10px;
-}
+}*/
 #right{
-    float: right;
-    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
 }
 .headline{
     font-size: 2.5rem;

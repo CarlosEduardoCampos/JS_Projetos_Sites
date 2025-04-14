@@ -5,8 +5,8 @@ const PAGE_CONTAINER = document.querySelector('.paginas_container');
             'func':'',
             'href':'./pages/cartao/index.html',
             'src':'./img/site.png',
-            'alt':'link home page empresarial',
-            'nome':'Empresarial'
+            'alt':'Pagina de dados do cartão',
+            'nome':'Cartão'
         }
     ]
 

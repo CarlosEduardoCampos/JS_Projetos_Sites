@@ -6,6 +6,14 @@
         transform: translateY(0%);
     }
 }
+@keyframes slideClose {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-400%);
+    }
+}
 @keyframes slideLeft {
     from {
         transform: translateX(-200%);

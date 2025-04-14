@@ -6,6 +6,8 @@
     position: fixed;
     top: 0;
     z-index: 1;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .fundoSaturno{
     width: 100%;

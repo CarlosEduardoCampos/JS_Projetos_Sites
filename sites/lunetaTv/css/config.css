@@ -52,6 +52,13 @@ html {
 body{
     overflow-x: hidden;
 }
+.stopBody{
+    overflow-y: hidden;
+}
+button{
+    background: none;
+    border: none;
+}
 a{
     text-decoration: none;
     color: var(--font-ligth);
@@ -64,5 +71,12 @@ ol, ul{
 }
 .visible {
     display: flex;
-    animation: slideUp 1s ease-out;
+    animation: slideUp 2s ease;
+}
+.open{
+    display: flex;
+    animation: fadeIn 1s ease;
+}
+.close{
+    animation: slideClose 2s ease forwards;
 }

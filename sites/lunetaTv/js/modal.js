@@ -31,6 +31,15 @@ const modal = (numID = 0) => {
   // Modifica a visualização mundando a classe:
   container.style.display = (container.style.display === 'flex') ? 'none' : 'flex';
 
+  // Escondendo logo flutuante
+  let scrollText = document.getElementById('logo_menu');
+  scrollText.classList.remove('visible');
+  scrollText.classList.add('close');
+
+  // Travando rolagem da pagina
+  let body = document.querySelector('body');
+  body.classList.add('stopBody');
+
   let p;
   let p_txt;
 
@@ -84,5 +93,8 @@ const modal = (numID = 0) => {
 
   else{
     container.innerHTML = '';
+    // Travando rolagem da pagina
+    let body = document.querySelector('body');
+    body.classList.remove('stopBody');
   }
 };

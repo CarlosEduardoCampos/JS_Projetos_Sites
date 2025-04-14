@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
-    <div class="logo hidden" id="logo_menu">
+    <div class="logo close hidden" id="logo_menu">
         <img src="./artes/etiqueta.png" alt="logo Luneta">
     </div>
     
@@ -27,7 +27,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main style="background-color: #000;">
         <nav class="menuConteudo">
             <ol>
                 <li><a href="#Saturno">Saturno</a></li>
@@ -65,7 +65,7 @@
                 </div>
             </div>
 
-            <div class="gravidade">
+            <div class="gravidade" style="margin-top: 100px;">
                 <div id="Marte" class="planetas marginE" onclick="modal(2)">
                     <img src="./artes/bandeiraMarte.png" id="bandeiraTerra" class="bandeira cordenada02">
                     <img src="./artes/marte.png" alt="Planeta Marte" style="width: 330px;">
@@ -114,6 +114,6 @@
     </footer>
 </body>
 <script src="./js/modal.js"></script>
-<script src="./js/logo_scroll.js"></script>
+<script src="./js/fadeIn_scroll.js"></script>
 <script src="./js/menu_burguer.js"></script>
 </html>

@@ -3,10 +3,10 @@ const MOLD_CONTAINER = document.querySelector('.modelos_container');
     const MOLD_DATA = [
         {
             'func':'',
-            'href':'./sites/homeEmpresarial/index.html',
+            'href':'./sites/homeEmpresa/index.html',
             'src':'./img/site.png',
             'alt':'link home page empresarial',
-            'nome':'Empresarial'
+            'nome':'Empresa'
         },
         {
             'func':'',
@@ -17,11 +17,18 @@ const MOLD_CONTAINER = document.querySelector('.modelos_container');
         },
         {
             'func':'',
-            'href':'./sites/homeMidia/index.html',
+            'href':'./sites/homeAgencia/site.html',
             'src':'./img/site.png',
             'alt':'link home page social midia',
-            'nome':'Social'
-        }
+            'nome':'Agencia'
+        },
+        {
+            'func':'',
+            'href':'./sites/homeCafeteria/index.html',
+            'src':'./img/site.png',
+            'alt':'link home page social midia',
+            'nome':'Cafeteria'
+        },
     ]
 
     const listaMold = (dados, container) => {

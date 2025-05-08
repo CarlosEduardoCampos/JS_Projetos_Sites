@@ -31,9 +31,6 @@ main{
 #tec > .tec_container{
     grid-template-columns: repeat(2, 1fr);
 }
-.games_container{
-    grid-template-columns: repeat(1, 1fr);
-}
-.projects_container{
-    grid-template-columns: repeat(1, 1fr);
+.container{
+    grid-template-columns: repeat(2, 1fr);
 }

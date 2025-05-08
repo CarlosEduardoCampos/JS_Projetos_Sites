@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +32,7 @@
     </header>
 
     <main>
-        <!-- Hero section  -->
+        <!-- Hero Section  -->
         <section class="hero-section">
             <div class="section-content">
                 <div class="hero-details">
@@ -65,23 +65,96 @@
         </section>
 
         <!-- Abaout Section-->
-         <section class="about-section">
-            <div class="section-content">
-                <div class="about-image-wrapper">
-                    <img src="./img/about-image.jpg" alt="About" class="about-image">
-                </div>
-                <div class="about-details">
-                    <h2 class="section-title"> About Us </h2>
-                    <p class="text">
-                        At Coffee Berndorf, Germany, we pride ourselves on being a go-to destination for coffe lovers and conversation seekers alike. We 're dedicated to providing as exceptional cofee experience in a cozy and inviting atmosphere, where quests can relax, unwind, and enjoy their time in comfort.
-                    </p>
-                    <div class="social-link-list">
-                        <a href="#" class="social-link"> <i class="fa-brands fa fa-facebook-square"></i> </a>
-                        <a href="#" class="social-link"> <i class="fa-brands fa fa-instagram"></i> </a>
-                    </div>
+        <section class="about-section">
+        <div class="section-content">
+            <div class="about-image-wrapper">
+                <img src="./img/about-image.jpg" alt="About" class="about-image">
+            </div>
+            <div class="about-details">
+                <h2 class="section-title"> About Us </h2>
+                <p class="text">
+                    At Coffee Berndorf, Germany, we pride ourselves on being a go-to destination for coffe lovers and conversation seekers alike. We 're dedicated to providing as exceptional cofee experience in a cozy and inviting atmosphere, where quests can relax, unwind, and enjoy their time in comfort.
+                </p>
+                <div class="social-link-list">
+                    <a href="#" class="social-link"> <i class="fa-brands fa fa-facebook-square"></i> </a>
+                    <a href="#" class="social-link"> <i class="fa-brands fa fa-instagram"></i> </a>
                 </div>
             </div>
-         </section>
+        </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section">
+            <div class="section-content">
+                <h2 class="section-title">Our Menu</h2>
+                <ul class="menu-list">
+                    <script>
+                        // Seleciona a tag que contera os itens:
+                        const MENU_ITENS = document.querySelector('.menu-list');
+
+                        // Lista de itens:
+                        const ITENS = [
+                            {
+                                'url':  'img/hot-beverages.png', 
+                                'alt':  'Hot Beverages',
+                                'text': 'Wide range of Steaming hot coffee to make you fresh and light.'
+                            },
+                            {
+                                'url':  'img/cold-beverages.png', 
+                                'alt':  'Cold Beverages',
+                                'text': 'Cremy and frothy cold coffee to make you cool.'
+                            },
+                            {
+                                'url':  'img/refreshment.png', 
+                                'alt':  'Refreshment',
+                                'text': 'Fruit and icy refreshing drink to make feel refresh.'
+                            },
+                            {
+                                'url':  'img/special-combo.png', 
+                                'alt':  'Special Combos',
+                                'text': 'Your favorite eating and drinking combations.'
+                            },
+                            {
+                                'url':  'img/desserts.png', 
+                                'alt':  'Dessert',
+                                'text': 'Satiate your palate an take you on a cilinary treat.'
+                            },
+                            {
+                                'url':  'img/burger-frenchfries.png', 
+                                'alt':  'Burger & French Fries',
+                                'text': 'Quick bites to satisfy your small size hunger.'
+                            },
+                        ];
+
+                        // Cria uma nova tag para cada item da lista e add a tag previamente selecionada:
+                        const loadItens = (itens, tag) => {
+                            itens.forEach(item => {
+                                try {
+                                    tag.innerHTML += `
+                                        <li class="menu-item">
+                                            <img src="${item.url}" alt="${item.alt}" class="menu-image">
+
+                                            <div class="menu-details">
+                                                <h3 class="name">${item.alt}</h3>
+                                                <p class="text">
+                                                    ${item.text}
+                                                </p>
+                                            </div
+                                        </li>
+                                    `;
+                                }
+                                catch (error) {
+                                    console.log(error);
+                                }
+                            });
+                        }
+
+                        // Chama a função e passa os parametros:
+                        loadItens(ITENS, MENU_ITENS);
+                    </script>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <script src="./js/open_close_menu.js"></script>

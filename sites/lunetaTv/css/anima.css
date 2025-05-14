@@ -17,18 +17,22 @@
 @keyframes slideLeft {
     from {
         transform: translateX(-200%);
+        opacity: 0;
     }
     to {
         transform: translateX(0%);
+        opacity: 1;
     }
     
 }
 @keyframes slideRight {
     from {
-        transform: translateX(200%);
+        opacity: 0;
+        width: 0;
     }
     to {
-        transform: translateX(0%);
+        opacity: 1;
+        width: 500px;
     }
 }
 @keyframes up {

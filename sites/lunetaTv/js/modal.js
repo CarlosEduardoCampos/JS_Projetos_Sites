@@ -56,7 +56,6 @@ const modal = (numID = 0) => {
 
         container.innerHTML += `
           <div class="conteudo">
-            <button onclick="modal()">X</button>
             <div class=" ${planeta.fundo}">
               <img src="./artes/${planeta.tag}" alt="Faixa escrito saturno" class="faixa">
               <div class="white ${planeta.fundo}2">
@@ -64,6 +63,7 @@ const modal = (numID = 0) => {
                 <p></p>
               </div>
             </div>
+            <button class="btn" onclick="modal()">X</button>
           </div>
         `;
 

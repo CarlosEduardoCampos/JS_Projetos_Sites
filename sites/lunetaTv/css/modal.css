@@ -11,19 +11,19 @@
 }
 .fundoSaturno{
     width: 100%;
-    background-image: url('../artes/fundo_saturno.png');
+    background-image: url('../artes/fundo_saturno.webp');
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
 }
 .fundoMarte{
     width: 100%;
-    background-image: url('../artes/fundo_marte.png');
+    background-image: url('../artes/fundo_marte.webp');
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
 }
 .fundoLua{
     width: 100%;
-    background-image: url('../artes/fundo_lua.png');
+    background-image: url('../artes/fundo_lua.webp');
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
 }
@@ -90,7 +90,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-image: url('../artes/fundo_mobile_saturno.png');
+        background-image: url('../artes/fundo_mobile_saturno.webp');
         background-size: cover; /* Ajusta a imagem para cobrir toda a área */
         background-position: center; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita que a imagem se repita */
@@ -99,7 +99,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-image: url('../artes/fundo_mobile_marte.png');
+        background-image: url('../artes/fundo_mobile_marte.webp');
         background-size: cover; /* Ajusta a imagem para cobrir toda a área */
         background-position: center; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita que a imagem se repita */
@@ -108,7 +108,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-image: url('../artes/fundo_mobile_lua.png');
+        background-image: url('../artes/fundo_mobile_lua.webp');
         background-size: cover; /* Ajusta a imagem para cobrir toda a área */
         background-position: center; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita que a imagem se repita */

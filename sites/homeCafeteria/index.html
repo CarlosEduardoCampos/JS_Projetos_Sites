@@ -6,6 +6,8 @@
     <title>Coffe Website</title>
     <!-- Icone -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- Estilo -->
     <link rel="stylesheet" href="./css/config.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -155,8 +157,108 @@
                 </ul>
             </div>
         </section>
+
+        <!-- Testimonials section -->
+        <section class="testimonials-section">
+            <h2 class="section-title"> Testimonials </h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide">
+                                <img src="img/user-1.jpg" alt="user" class="user-image">
+                                <h3 class="name">Sarah johnson</h3>
+                                <i class="feedback">"Loved the French roast. Perfecty balanced and rich. Will order again!"</i>
+                            </li>
+
+                            <li class="testimonial swiper-slide">
+                                <img src="img/user-2.jpg" alt="user" class="user-image">
+                                <h3 class="name">James Wilson</h3>
+                                <i class="feedback">"Great espresso blend! Smooth and bold flavor. Fast shipping too!"</i>
+                            </li>
+
+                            <li class="testimonial swiper-slide">
+                                <img src="img/user-3.jpg" alt="user" class="user-image">
+                                <h3 class="name">Michael Brown</h3>
+                                <i class="feedback">"Fantastic mocha flavor. Fresh and aromatic. Quick shipping"</i>
+                            </li>
+
+                            <li class="testimonial swiper-slide">
+                                <img src="img/user-4.jpg" alt="user" class="user-image">
+                                <h3 class="name">Emily Harris</h3>
+                                <i class="feedback">"Excellent quality! Fresh beans and quick delivery. Highly recommend."</i>
+                            </li>
+
+                            <li class="testimonial swiper-slide">
+                                <img src="img/user-5.jpg" alt="user" class="user-image">
+                                <h3 class="name">Anthony Thompson</h3>
+                                <i class="feedback">"Best decaf I've tried! flavorful. Smooth and flavorful. Arrived promptly."</i>
+                            </li>
+                        </ul>
+
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery section -->
+        <section class="gallery-section">
+            <h2 class="section-title"> Gallery </h2>
+
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="./img/gallery-1.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="./img/gallery-2.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="./img/gallery-3.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="./img/gallery-4.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="./img/gallery-5.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="./img/gallery-6.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="contact-section">
+            <h2 class="section-title"> Contact Us </h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>123 Campsite Avenue, Wilderness, CA 98765</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
+    <!-- Linking Sliper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Linking Sliper script costum -->
+    <script src="./js/sliper.js"></script>
+    
     <script src="./js/open_close_menu.js"></script>
 </body>
 </html>

@@ -7,6 +7,13 @@ const PAGE_CONTAINER = document.querySelector('.paginas_container');
             'src':'./img/site.png',
             'alt':'Pagina de dados do cartão',
             'nome':'Cartão'
+        },
+        {
+            'func':'',
+            'href':'./pages/galeria/galeria.html',
+            'src':'./img/site.png',
+            'alt':'Pagina galeria de fotos',
+            'nome':'Galeria'
         }
     ]
 

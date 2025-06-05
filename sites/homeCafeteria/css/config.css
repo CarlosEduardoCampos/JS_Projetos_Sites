@@ -40,6 +40,10 @@
     --site-max-width: 1300px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Estilos para todo o site */
 ul {
     list-style: none;

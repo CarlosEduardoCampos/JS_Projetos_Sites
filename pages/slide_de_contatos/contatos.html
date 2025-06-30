@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Depoimentos de Clientes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .slider-container {
+      max-width: 600px;
+      margin: 50px auto;
+      overflow: hidden;
+      position: relative;
+      backdrop-filter: blur(8px); /* efeito vidro fosco */
+    }
+
+    .slide {
+      display: none;
+      width: 70%;
+      height: 300px;
+      padding: 40px 30px;
+      margin: auto;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.7); /* semi-transparente */
+      border: 2px solid rgba(0, 0, 0, 0.363); /* borda leve */
+      border-radius: 20px;
+    }
+
+    .slide.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    .comment {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .author {
+      font-weight: bold;
+      color: #222;
+    }
+
+    .nav-buttons {
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    .nav-buttons button {
+      background-color: transparent;
+      border: none;
+      font-size: 2rem;
+      color: #777;
+      cursor: pointer;
+      transition: color 0.3s ease;
+      pointer-events: all;
+    }
+
+    .nav-buttons button:hover {
+      color: #000;
+    }
+
+    .indicators {
+      text-align: center;
+      padding: 15px;
+    }
+
+    .indicator {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .indicator.active {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slider-container">
+  <div class="slide active">
+    <img class="profile-img" src="https://randomuser.me/api/portraits/men/2.jpg" alt="João Pereira">
+    <p class="comment">"Atendimento excelente, equipe muito profissional e atenciosa!"</p>
+    <p class="author">— João Pereira</p>
+  </div>
+  <div class="slide">
+    <img class="profile-img" src="https://randomuser.me/api/portraits/women/3.jpg" alt="Maria Fernanda">
+    <p class="comment">"A melhor experiência que já tive com uma empresa do ramo."</p>
+    <p class="author">— Maria Fernanda</p>
+  </div>
+  <div class="slide">
+    <img class="profile-img" src="https://randomuser.me/api/portraits/men/4.jpg" alt="Carlos Lima">
+    <p class="comment">"Ambiente agradável, limpo e ótimo custo-benefício."</p>
+    <p class="author">— Carlos Lima</p>
+  </div>
+
+  <div class="nav-buttons">
+    <button onclick="changeSlide(-1)">&#10094;</button>
+    <button onclick="changeSlide(1)">&#10095;</button>
+  </div>
+
+  <div class="indicators">
+    <span class="indicator active" onclick="goToSlide(0)"></span>
+    <span class="indicator" onclick="goToSlide(1)"></span>
+    <span class="indicator" onclick="goToSlide(2)"></span>
+  </div>
+</div>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+  const indicators = document.querySelectorAll('.indicator');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+      indicators[i].classList.toggle('active', i === index);
+    });
+  }
+
+  function changeSlide(direction) {
+    currentSlide += direction;
+    if (currentSlide < 0) currentSlide = slides.length - 1;
+    if (currentSlide >= slides.length) currentSlide = 0;
+    showSlide(currentSlide);
+  }
+
+  function goToSlide(index) {
+    currentSlide = index;
+    showSlide(currentSlide);
+  }
+
+  setInterval(() => {
+    changeSlide(1);
+  }, 5000);
+</script>
+
+</body>
+</html>

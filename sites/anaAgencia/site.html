@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/config.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/home.css" />
+    <title>Web Design Mastery | WDM&Co</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">LK</div>
+      <ul class="nav__links">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link"><a href="#about">Quem Somos</a></li>
+        <li class="link"><a href="#pacotes">Pacotes</a></li>
+        <li class="link"><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <header class="section__container header__container">
+      <div class="header__image__container">
+        <div class="header__content">
+          <h1> VIVA UM SONHO!</h1>
+          <p>EXPLORE DESTINOS INCRÍVEIS COM CONEXÃO, LIBERDADE E NATUREZA!</p>
+        </div>
+
+        <div class="booking__container">
+          <form>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" id="location" placeholder="Hotel Plaza"/>
+              </div>
+              <p>Para onde você vai?</p>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="date" id="check_in" class="data_in"/>
+              </div>
+              <p>Data de Check In</p>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="date" id="check_out"  class="data_out"/>
+              </div>
+              <p>Data de Check Out</p>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" id="pessoas" placeholder="2 adultos 1 criança"/>
+              </div>
+              <p>Quantas pessoas ?</p>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" placeholder="(37) 9 9999 - 9999"  id="numero"/>
+              </div>
+              <p>Numero de celular</p>
+            </div>
+          </form>
+          <button class="btn" onclick="enviarEmail()"><i class="ri-search-line"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container about_container">
+      <h2 class="section__header" id="about">Quem Somos</h2>
+      <div class="about_grid">
+        <p>
+          Somos apaixonados por natureza, pessoas e experiências reais.
+          A LK nasceu do desejo de <b>LEVAR AS PESSOAS A VIVEREM O BRASIL DE FORMA AUTÊNTICA</b>, acessível e inesquecível. Começamos organizando excursões em Minas Gerais, com foco em segurança, acolhimento e contato com o que há de melhor e mais bonito:  a natureza e a cultura local.
+          Nosso propósito é crescer com os pés na terra, ouvindo cada viajante, respeitando os territórios e conectando você a algo maior do que apenas um destino.
+          <br><br>
+          Uma agência de viagens com alma aventureira e coração mineiro. Criamos excursões e experiências inesquecíveis para quem gosta de viajar com leveza, segurança e alegria. Começamos no ponto de partida,até vos levar  ao paraíso das águas cristalinas e serras verde brilhantes. Queremos te levar pra viver isso de perto.
+          Viajar é mais do que chegar a um lugar- É transformar-se com ele.
+        </p>
+
+        <img src="/assets/about_img.jpg" alt="Foto em grupo">
+      </div>
+    </section>
+
+    <section class="section__container popular__container" id="pacotes">
+      <h2 class="section__header">Pacotes</h2>
+      <div class="popular__grid">
+        <div class="popular__card">
+          <h2>Bate e Volta</h2>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Duração de 1 dia
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Guia Local
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Transporte
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Passeio Lancha
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Café da Manhâ
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Almoço
+          </p>
+        </div>
+
+        <div class="popular__card">
+          <h2>Pacote Popular</h2>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Duração 3 Dias
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Guia Local
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Transporte (Ônibus)
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Passeio Lancha
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Hospedagem
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Almoço
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Day Use
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Subida ao Morro do Chapel (1 Lebrancinha)
+          </p>
+        </div>
+
+        <div class="popular__card">
+          <h2>Pacote Soft</h2>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Duração 3 Dias
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Guia Local
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Transporte (Van 15 à 18 Lugares)
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Passeio Lancha
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Hospedagem
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Almoço
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Day Use
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Subida ao Morro do Chapel
+          </p>
+        </div>
+
+        <div class="popular__card">
+          <h2>Pacote Premium</h2>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Duração 4 Dias
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Transporte
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Serra da Canastra Parte Baixa
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Café da Manhâ no Parque
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Passeio Lancha (7 Hora de Duração)
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Hospedagem
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Brunche
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Tirolesa
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Mirante Tuná
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Dia Livre
+          </p>
+        </div>
+
+        <div class="popular__card">
+          <h2>Pacote Master Premium</h2>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Duração 6 Dias
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Transporte (Van 15 à 18 Lugares)
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Serra da Canastra Parte Baixa
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Café da Manhâ no Parque
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Passeio Casa Flutuante ou Lancha (7 Hora de Duração)
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Voo de Balão
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Hospedagem
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Brunche
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Passeio Rural
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Tur em Cachoeira
+          </p>
+          <p>
+            <i class="ri-checkbox-circle-line"></i>
+            Dia Livre
+          </p>
+        </div>
+    </section>
+
+    <section class="client">
+      <div class="section__container client__container">
+        <h2 class="section__header">O que nossos clientes dizem</h2>
+        <div class="client__grid">
+          <div class="client__card">
+            <img src="https://randomuser.me/api/portraits/women/13.jpg" alt="client" />
+            <p>
+              O processo de reserva foi perfeito e a confirmação foi instante. Eu recomendo fortemente a WDM & Co para reservas de hotéis sem complicações.
+            </p>
+          </div>
+          <div class="client__card">
+            <img src="https://randomuser.me/api/portraits/women/9.jpg" alt="client" />
+            <p>
+              O site fornecia informações detalhadas sobre o hotel, incluindo Comodidades, fotos, o que me ajudou a tomar uma decisão informada.
+            </p>
+          </div>
+          <div class="client__card">
+            <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="client" />
+            <p>
+              Consegui reservar um quarto em poucos minutos e o hotel excedeu minhas expectativas. Aprecio a eficiência e a confiabilidade da WDM&Co.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>WDM&Co</h3>
+          <p>
+            WDM & Co é um site de reservas de hotéis de primeira linha que oferece uma maneira conveniente de encontrar e reservar acomodações em todo o mundo.
+          </p>
+          <p>
+            Com uma interface amigável e uma vasta seleção de hotéis, A WDM&Co tem como objetivo proporcionar uma experiência sem estresse para os viajantes buscando a estadia perfeita.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <p>FAQs</p>
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2023 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+     <div class="WhatsBtn">
+        <a href="https://wa.me/5511999999999">
+            <img src="./assets/whast.png" alt="WhatsApp">
+        </a>
+     </div>
+
+    <script>
+      // Obtém a data atual
+      const today = new Date();
+      // Formata a data no padrão AAAA-MM-DD
+      const formattedDate = today.toISOString().split('T')[0];
+      // Define o atributo min do input para a data atual
+      document.querySelector('.data_in').setAttribute('min', formattedDate);
+      document.querySelector('.data_out').setAttribute('min', formattedDate);
+    </script>
+
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script>
+      function enviarEmail()
+      {
+        let local = document.getElementById('location');
+        let check_in = document.getElementById('check_in');
+        let check_out = document.getElementById('check_out');
+        let pessoas = document.getElementById('pessoas');
+        let numero = document.getElementById('numero');
+
+        let msg = 'Tenho interesse e me hopedar no '+ (local.value) +'\n Durante o periodo de '+ (check_in.value) +' até '+ (check_out.value) +'\n Hopedes : '+ (pessoas.value);
+
+        emailjs.init('VI1qAtCDpc_AbOkhD');
+
+        emailjs.send(
+            "service_fam164f","template_uwe7xoq",
+            {
+                mensagem: msg,
+                number: (numero.value),
+                email:prompt('Digite o email que gostaria de receber a mensagem:'),
+                //email: 'carlos.admcode@gmail.com',
+            }
+        )
+        .then(response => {
+            alert("Email enviado com sucesso!");
+            console.log("Sucesso:", response);
+        }).catch(error => {
+            alert("Erro ao enviar email.");
+            console.log("Erro:", error);
+        });
+      }
+    </script>
+
+  </body>
+</html>

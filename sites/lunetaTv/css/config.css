@@ -50,7 +50,10 @@ html {
     box-sizing: border-box;
 }
 body{
+    display: block;
     overflow-x: hidden;
+    width: 100%;
+    object-fit: cover;
 }
 .stopBody{
     overflow-y: hidden;

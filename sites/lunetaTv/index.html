@@ -31,6 +31,7 @@
         <nav class="menuConteudo">
             <ol>
                 <li><a href="#Saturno">Saturno</a></li>
+                <li><a href="#Jupiter">Jupiter</a></li>
                 <li><a href="#Marte">Marte</a></li>
                 <li><a href="#Lua">Selene</a></li>
                 <li><a href="#Terra">Terra</a></li>
@@ -58,42 +59,49 @@
         </div>
 
         <section id="universo">
-            <div class="gravidade">
-                <div id="Saturno" class="planetas marginD" onclick="modal(1)">
-                    <img src="./artes/bandeiraSaturno.png" id="bandeiraTerra" class="bandeira cordenada01">
-                    <img src="./artes/saturno.jpg" alt="Planeta Saturno"  style="width: 900px; margin: -100px;">
+            <div class="gravidade" id="Saturno" >
+                <div class="planetas marginD" onclick="modal(1)" style="margin-top: -100px; margin-bottom: -200px;">
+                    <img src="./artes/bandeiraSaturno.png"class="bandeira cordenada01">
+                    <img src="./artes/saturno.png" alt="Planeta Saturno"  style="max-width: 100%; min-width: 800px;">
                 </div>
             </div>
 
-            <div class="gravidade" style="margin-top: 100px;">
-                <div id="Marte" class="planetas marginE" onclick="modal(2)">
-                    <img src="./artes/bandeiraMarte.png" id="bandeiraTerra" class="bandeira cordenada02">
+            <div class="gravidade" id="Jupiter">
+                <div class="planetas marginD" onclick="modal(1)">
+                    <img src="./artes/bandeiraJupiter.png"class="bandeira cordenada00" style="margin-bottom: -200px;">
+                    <img src="./artes/Jupiter.png" alt="Planeta Saturno"  style="max-width: 100%; min-width: 600px;">
+                </div>
+            </div>
+
+            <div class="gravidade" style="margin-top: 100px;" id="Marte">
+                <div class="planetas marginE" onclick="modal(2)">
+                    <img src="./artes/bandeiraMarte.png"class="bandeira cordenada02">
                     <img src="./artes/marte.png" alt="Planeta Marte" style="width: 330px;">
                 </div> 
             </div>
     
-            <div class="gravidade">
-                <div id="Lua" class="planetas" onclick="modal(3)">
-                    <img src="./artes/bandeiraLua.png" id="bandeiraTerra" class="bandeira cordenada03">
+            <div class="gravidade" id="Lua">
+                <div class="planetas" onclick="modal(3)">
+                    <img src="./artes/bandeiraLua.png"class="bandeira cordenada03">
                     <img src="./artes/lua.png" alt="Lua" style="width: 300px;">
                 </div>
             </div>
 
-            <div class="gravidade">
-                <div id="Terra" class="planetas marginE" onclick="modal(1)">
-                    <img src="./artes/bandeiraTerra.png" id="bandeiraTerra" class="bandeira cordenada04">
-                    <img src="./artes/terra.png" alt="Planeta Terra" style="width: 500px;">
+            <div class="gravidade" id="Terra"> 
+                <div class="planetas" onclick="modal(1)">
+                    <img src="./artes/bandeiraTerra.png"class="bandeira cordenada04">
+                    <img src="./artes/terra.png" alt="Planeta Terra" style="width: 100%; min-width: 430px;">
                 </div>
             </div>
         </section>
     </main>
+    
     <!-- Botão Flutuante do WhatsApp -->
      <div class="WhatsBtn">
         <a href="https://wa.me/5511999999999">
             <img src="./artes/whast.png" alt="WhatsApp">
         </a>
      </div>
-    
 
     <footer>
         <div id="social">

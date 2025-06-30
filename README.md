@@ -1,5 +1,5 @@
 💼 Portfólio de Carlos E. C. Rodrigues
-Bem-vindo ao meu portfólio! Aqui você encontra uma seleção dos meus projetos, experiências e habilidades. Sou [sua profissão ou área de estudo, como "desenvolvedor full-stack", "estudante de Sistemas de Informação", etc.], apaixonado por tecnologia, resolução de problemas e aprendizado contínuo.
+Bem-vindo ao meu portfólio! Aqui você encontra uma seleção dos meus projetos, experiências e habilidades. Sou desenvolvedor full-stack apaixonado por tecnologia, resolução de problemas e aprendizado contínuo.
 
 🚀 Sobre Mim
 🎓 Formação: Sistemas de Informação pela UEMG
@@ -19,7 +19,7 @@ UI/UX Design básico
 
 📌 Experiências
 Prefeitura Municipal de Capitólio – Estagiário de Sistemas de Informação
-[Ano de início] – [Ano de término]
+2020 – 2024
 Atuei no suporte técnico e manutenção de sistemas, contribuindo para o bom funcionamento das rotinas internas.
 
 🤝 Conecte-se comigo

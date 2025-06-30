@@ -30,8 +30,8 @@
     <main style="background-color: #000;">
         <nav class="menuConteudo">
             <ol>
-                <li><a href="#Saturno">Saturno</a></li>
                 <li><a href="#Jupiter">Jupiter</a></li>
+                <li><a href="#Saturno">Saturno</a></li>
                 <li><a href="#Marte">Marte</a></li>
                 <li><a href="#Lua">Selene</a></li>
                 <li><a href="#Terra">Terra</a></li>
@@ -59,17 +59,17 @@
         </div>
 
         <section id="universo">
-            <div class="gravidade" id="Saturno" >
-                <div class="planetas marginD" onclick="modal(1)" style="margin-top: -100px; margin-bottom: -200px;">
-                    <img src="./artes/bandeiraSaturno.png"class="bandeira cordenada01">
-                    <img src="./artes/saturno.png" alt="Planeta Saturno"  style="max-width: 100%; min-width: 800px;">
-                </div>
-            </div>
-
             <div class="gravidade" id="Jupiter">
                 <div class="planetas marginD" onclick="modal(1)">
                     <img src="./artes/bandeiraJupiter.png"class="bandeira cordenada00" style="margin-bottom: -200px;">
                     <img src="./artes/Jupiter.png" alt="Planeta Saturno"  style="max-width: 100%; min-width: 600px; rotate: 55deg;">
+                </div>
+            </div>
+
+            <div class="gravidade" id="Saturno" >
+                <div class="planetas marginD" onclick="modal(1)" style="margin-top: -100px; margin-bottom: -200px;">
+                    <img src="./artes/bandeiraSaturno.png"class="bandeira cordenada01">
+                    <img src="./artes/saturno.png" alt="Planeta Saturno"  style="max-width: 100%; min-width: 800px;">
                 </div>
             </div>
 
@@ -83,14 +83,14 @@
             <div class="gravidade" id="Lua">
                 <div class="planetas" onclick="modal(3)">
                     <img src="./artes/bandeiraLua.png"class="bandeira cordenada03">
-                    <img src="./artes/lua.png" alt="Lua" style="width: 300px;">
+                    <img src="./artes/lua.png" alt="Lua" style="width: 300px; rotate: -15deg;">
                 </div>
             </div>
 
             <div class="gravidade" id="Terra"> 
                 <div class="planetas" onclick="modal(1)">
                     <img src="./artes/bandeiraTerra.png"class="bandeira cordenada04">
-                    <img src="./artes/terra.png" alt="Planeta Terra" style="width: 100%; min-width: 430px;">
+                    <img src="./artes/terra.png" alt="Planeta Terra" style="width: 100%; min-width: 430px; margin-bottom: -100px;">
                 </div>
             </div>
         </section>

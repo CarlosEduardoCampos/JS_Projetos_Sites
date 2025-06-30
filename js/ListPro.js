@@ -8,13 +8,14 @@ const PROJ_CONTAINER = document.querySelector('.projects_container');
             'src':'./img/site.png',
             'alt':'link home page candidato politico',
             'nome':'Política-00'
-        },{
-            'func':'',
-            'href':'./sites/saraMariano/index.html',
-            'src':'./img/site.png',
-            'alt':'link home page candidato politico',
-            'nome':'Política-01'
         },*/
+        {
+            'func':'',
+            'href':'./sites/anaAgencia/site.html',
+            'src':'./img/site.png',
+            'alt':'link home page agencia de turismo LK',
+            'nome':'Turimos_LK'
+        },
         {
             'func':'',
             'href':'./sites/lunetaTv/index.html',

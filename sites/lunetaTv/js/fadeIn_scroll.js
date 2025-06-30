@@ -3,7 +3,7 @@
 window.addEventListener('scroll', function() {
     let scrollText = document.getElementById('logo_menu');
 
-    if (window.scrollY > CordenadaAtiva(3)) { // Ajuste o valor conforme necessário
+    if (window.scrollY > CordenadaAtiva(0.5)) { // Ajuste o valor conforme necessário
         scrollText.classList.remove('close');
         scrollText.classList.remove('hidden');
         scrollText.classList.add('visible');

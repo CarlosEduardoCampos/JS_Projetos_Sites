@@ -122,10 +122,10 @@ main nav ol li a img{
 }
 /*Bandeira Jupiter*/
 .cordenada00{
-    width: 96%;
-    rotate: -10deg;
+    width: 670px;
+    rotate: -20deg;
     translate:20px;
-    margin-left: -70px;
+    margin-left: -60px;
     margin-top: -10px;
 }
 /*Bandeira Saturno*/
@@ -135,9 +135,9 @@ main nav ol li a img{
 }
 /*Bandeira Marte*/
 .cordenada02{
-    width: 99%;
-    margin-top: -275px;
-    margin-left: -180px;
+    width: 645px;
+    margin-top: -230px;
+    margin-left: -100px;
 }
 /*Bandeira Lua*/
 .cordenada03{
@@ -147,7 +147,7 @@ main nav ol li a img{
 }
 /*Bandeira Terra*/
 .cordenada04{
-    width: 800px;
+    width: 720px;
     rotate: 60deg;
     margin-top: -100px;
     margin-left: -150px;

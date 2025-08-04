@@ -130,8 +130,9 @@ main nav ol li a img{
 }
 /*Bandeira Saturno*/
 .cordenada01{
-    margin-left: -200px;
-    margin-top: -210px;
+    width: 800px;
+    margin-left: 20px;
+    margin-top: 40px;
 }
 /*Bandeira Marte*/
 .cordenada02{
@@ -147,10 +148,10 @@ main nav ol li a img{
 }
 /*Bandeira Terra*/
 .cordenada04{
-    width: 720px;
-    rotate: 60deg;
+    width: 750px;
+    rotate: -290deg;
     margin-top: -100px;
-    margin-left: -150px;
+    margin-left: -120px;
 }
 .WhatsBtn{
     position:fixed;

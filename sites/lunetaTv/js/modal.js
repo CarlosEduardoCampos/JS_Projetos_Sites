@@ -21,6 +21,20 @@ const CONTEUDO_PLANETAS = [
     `\nSabia que o nome da nossa lua é Selene? A deusa grega em sua carruagem prateada, velando nosso planetinha azul todas as noites, o que deu a ela o arquétipo de uma grande mãe. Selene representa <span class="blue">renovação, mistério, sonhos, desejos e amor eterno</span> e foi em homenagem a ela que a Luneta nasceu com sonhos sociais e coletivos pra lá de ambiciosos.\n\n<span class="green">Somos uma agência cooperativista baseada em Economia Solidária</span>. Todo lucro é dividido equitativamente e todos os profissionais podem se ver em seus trabalhos e participam dele do começo ao fim.  Nosso jornal independente e profissional, a Luneta TV, foca em dar voz aos mais silenciados e promover o <span class="green">Jornalismo ativista em prol de um mundo mais justo</span>.`,
     'fundo': 'fundoLua'
   },
+  {
+    'id': 4,
+    'tag': 'tagJupiter.png',
+    'texto': 
+    `\n\nJúpiter é o maior planeta do nosso sistema solar, formado principalmente por gás e tempestades. Uma delas dura há mais de 300 anos: a Grande Mancha Vermelha — aquela mesma que você reparou na atmosfera magnífica do astro.\n\nJúpiter representa <span class="blue">autoridade e sabedoria.</span> Por isso, foi o escolhido para simbolizar as <span class="green">coproduções de infoprodutos</span> da Luneta com uma galera que ama tanto o que faz que decidiu ensinar os outros por meio de seus cursos.\n\nAcreditamos que sabedoria precisa ser compartilhada — e a paixão dos nossos clientes nos inspira!`,
+    'fundo': 'fundoJupiter'
+  },
+  {
+    'id': 5,
+    'tag': 'tagTerra.png',
+    'texto': 
+    `\n\nNa <spam class="blue">UEMG(Universidade do Estado de Minas Gerais)</spam>, unidade Passos, foi estudada e criada a Luneta. A Terra tem um dos recursos mais valiosos e raros do universo: a <spam class="green">a vida!</spam> E, com ela, possibilidades inimagináveis. Entretanto, o seleto grupo orgânico e racional que a habita acabou se organizando de forma bastante hierárquica e desigual.\n\nAcreditamos que as Ciências e a cooperação são algumas das soluções para repensarmos a forma de existirmos. E, no que tange ao nosso trabalho, prestamos serviços de <spam class="blue">jornalismo, publicidade, propaganda e marketing</spam> de forma justa, criativa e com compromisso social - sempre em busca de conexões com quem também <spam class="green">enxerga além</spam>`,
+    'fundo': 'fundoTerra'
+  },
 ];
 
 const modal = (numID = 0) => {

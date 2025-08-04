@@ -41,8 +41,8 @@ html {
 :root{
     --font-ligth:#f5f5f5;
     --font-black:#000;
-    --back-ligth:#00be7f;
-    --back-black:#0b6fa5;
+    --back-ligth:#1fc78c;
+    --back-black:#0074c1;
 }
 * {
     margin: 0;

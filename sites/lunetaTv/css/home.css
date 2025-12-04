@@ -234,6 +234,7 @@ main nav ol li a img{
     /*Terra*/
     .cordenada04{
         width: 620px;
+        rotate: -20deg;
         margin-top: -80px;
         margin-left: -80px;
     }

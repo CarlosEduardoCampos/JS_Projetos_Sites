@@ -41,7 +41,7 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
     let scrollText = document.querySelector('.cordenada02');
     
-    if (window.scrollY > CordenadaAtiva(50)) { // Ajuste o valor conforme necessário
+    if (window.scrollY > CordenadaAtiva(40)) { // Ajuste o valor conforme necessário
         scrollText.classList.remove('hidden');
         scrollText.classList.add('open');
     } else {
@@ -53,7 +53,7 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
     let scrollText = document.querySelector('.cordenada03');
 
-    if (window.scrollY > CordenadaAtiva(60)) { // Ajuste o valor conforme necessário
+    if (window.scrollY > CordenadaAtiva(55)) { // Ajuste o valor conforme necessário
         scrollText.classList.remove('hidden');
         scrollText.classList.add('open');
     } else {
@@ -65,7 +65,7 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
     let scrollText = document.querySelector('.cordenada04');
 
-    if (window.scrollY > CordenadaAtiva(66)) { // Ajuste o valor conforme necessário
+    if (window.scrollY > CordenadaAtiva(60)) { // Ajuste o valor conforme necessário
         scrollText.classList.remove('hidden');
         scrollText.classList.add('open');
     } else {

@@ -15,7 +15,7 @@ const imoveis = [
         nome: "Rancho Rodrigues",
         local: "Capitólio-MG(Rural)",
         link: "",
-        img: "img/exemplo3.jpg"
+        img: "img/rc001.jpg"
     },
 ];
 

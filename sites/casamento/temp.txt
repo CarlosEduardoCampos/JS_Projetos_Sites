@@ -1,0 +1,48 @@
+<div class="gift-card">
+                    <i class="fa-solid fa-plane"></i>
+                    <h3>Lua de Mel</h3>
+                    <p>R$ 250,00</p>
+                    <button>Presentear</button>
+                </div>
+
+                <div class="gift-card">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h3>Jantar Romântico</h3>
+                    <p>R$ 180,00</p>
+                    <button>Presentear</button>
+                </div>
+
+                <div class="gift-card">
+                    <i class="fa-solid fa-couch"></i>
+                    <h3>Mobília</h3>
+                    <p>R$ 450,00</p>
+                    <button>Presentear</button>
+                </div>
+
+                <div class="gift-card">
+                    <i class="fa-solid fa-house"></i>
+                    <h3>Reforma</h3>
+                    <p>R$ 500,00</p>
+                    <button>Presentear</button>
+                </div>
+
+                <div class="gift-card">
+                    <i class="fa-solid fa-suitcase"></i>
+                    <h3>Viagem</h3>
+                    <p>R$ 300,00</p>
+                    <button>Presentear</button>
+                </div>
+
+                <div class="gift-card">
+                    <i class="fa-solid fa-kitchen-set"></i>
+                    <h3>Cozinha</h3>
+                    <p>R$ 220,00</p>
+                    <button>Presentear</button>
+                </div>
+
+                <div class="gift-card">
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>Decoração</h3>
+                    <p>R$ 200,00</p>
+                    <button>Presentear</button>
+                </div>

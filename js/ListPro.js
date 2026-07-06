@@ -25,7 +25,7 @@ const PROJ_CONTAINER = document.querySelector('.projects_container');
         },
         {
             'func':'',
-            'href':'./sites/casamento/index.html',
+            'href':'./sites/casamento/site.html',
             'src':'./img/site.png',
             'alt':'link home page social midia',
             'nome':'Casamento'

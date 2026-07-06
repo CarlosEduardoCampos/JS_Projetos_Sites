@@ -22,7 +22,14 @@ const PROJ_CONTAINER = document.querySelector('.projects_container');
             'src':'./img/site.png',
             'alt':'link home page empresa de mackenting',
             'nome':'Luneta'
-        }
+        },
+        {
+            'func':'',
+            'href':'./sites/casamento/index.html',
+            'src':'./img/site.png',
+            'alt':'link home page social midia',
+            'nome':'Casamento'
+        },
     ]
 
     const listaProjetos = (dados, container) => {

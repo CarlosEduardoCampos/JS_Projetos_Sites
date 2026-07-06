@@ -47,7 +47,7 @@ const listaPresentes = (dados, container) => {
                 <i class="${dado.icon}"></i>
                 <h3>${dado.nome}</h3>
                 <p>${dado.valor}</p>
-                <button>Presentear</button>
+                <button onclick="abrirPopup()" >Presentear</button>
             </div>
         `;
     });

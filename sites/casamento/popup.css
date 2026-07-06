@@ -1,0 +1,48 @@
+.popup-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    z-index: 999;
+}
+
+.popup{
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    position: absolute;
+    text-align: center;
+    animation: aparecer .3s ease;
+}
+
+#fecharPopup{
+    display:inline-flex;
+    position: relative;
+    float: right;
+    align-items:center;
+    justify-content:center;
+    width: 30px;
+    padding:5px;
+    border-radius:20px;
+    background: red;
+    color:#fff;
+    font-weight:600;
+    transition:var(--transition);
+    box-shadow:var(--shadow);
+}
+
+@keyframes aparecer{
+    from{
+        transform: scale(.8);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
